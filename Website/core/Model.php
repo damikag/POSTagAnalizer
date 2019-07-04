@@ -125,7 +125,7 @@ class Model {
         return false;
     }
 
-    protected function populateObjData($result) {
+    public function populateObjData($result) {
         foreach($result as $key => $val) {
             $this->$key = $val;
         }

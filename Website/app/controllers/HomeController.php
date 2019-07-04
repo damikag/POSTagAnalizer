@@ -13,8 +13,25 @@ class HomeController extends Controller{
 
     public function allwordsAction(){
         $_db=DB::getInstance();
-        $this->view->searchResults=$_db->query("SELECT * from AllWords",[]);
-        dnd($this->view->searchResults);
+//        $this->view->searchResults=$_db->query("SELECT * from AllWords",[]);
+
+        $results=[];
+
+        $resultsQuery = $_db->query("SELECT * from AllWords WHERE ID<10",[]);
+        $resultsQuery=$resultsQuery->results();
+        if($resultsQuery){
+//            dnd(($resultsQuery));
+            foreach($resultsQuery as $result) {
+
+                $obj = new Model('AllWords');
+//                dnd($obj);
+                $obj->populateObjData($result);
+                $results[] =$obj;
+            }
+        }
+//        dnd($resultsQuery);
+        $this->view->searchResults=$results;
+//        dnd($this->view->searchResults);
         $this->view->render('home/allwords');
     }
 
