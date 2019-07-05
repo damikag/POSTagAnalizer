@@ -48,5 +48,13 @@ class HomeController extends Controller{
         $this->view->render('home/allwords');
     }
 
+    public function tagAction() {                   //queryParam will be passed into the method
+
+        $tag=new Tag();
+        $this->view->searchResults=$tag->_tagList;
+//        dnd($tag->_tagList);
+        $this->view->render('home/tag');
+    }
+
 }
 

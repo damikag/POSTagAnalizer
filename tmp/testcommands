@@ -11,6 +11,20 @@ CREATE TABLE `POSTag`.`AllWords` ( `ID` INT(255) NOT NULL AUTO_INCREMENT , `Word
 ==============================================================================================================
 
 
+============================== Tag table=========================================================================
+
+CREATE TABLE `POSTag`.`Tags` ( `Tag` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL ,    PRIMARY KEY  (`Tag`)) ENGINE = InnoDB;
+
+INSERT INTO Tags SELECT DISTINCT Tag FROM AllWords
+
+
+
+
+=================================== WordList Table ===========================================================
+
+CREATE TABLE `POSTag`.`WordList` ( `Words` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL ,    PRIMARY KEY  (`Words`)) ENGINE = InnoDB;
+
+INSERT INTO WordList SELECT DISTINCT Word FROM AllWords
 
 ======================================= Testing ==============================================================
 
