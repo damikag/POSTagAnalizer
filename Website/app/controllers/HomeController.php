@@ -12,26 +12,39 @@ class HomeController extends Controller{
     }
 
     public function allwordsAction(){
+        $results_per_page = 50;
+        $datatable='AllWords';
+
+        if (isset($_GET["page"])) {
+            $page  = $_GET["page"];
+        }
+        else{
+            $page=1;
+        };
+        $start_from = ($page-1) * $results_per_page;
+        $sql = "SELECT * FROM ".$datatable." ORDER BY ID ASC LIMIT $start_from, ".$results_per_page;
         $_db=DB::getInstance();
-//        $this->view->searchResults=$_db->query("SELECT * from AllWords",[]);
 
         $results=[];
-
-        $resultsQuery = $_db->query("SELECT * from AllWords WHERE ID<10",[]);
+        $resultsQuery = $_db->query($sql,[]);
         $resultsQuery=$resultsQuery->results();
+
         if($resultsQuery){
-//            dnd(($resultsQuery));
             foreach($resultsQuery as $result) {
 
                 $obj = new Model('AllWords');
-//                dnd($obj);
                 $obj->populateObjData($result);
                 $results[] =$obj;
             }
         }
-//        dnd($resultsQuery);
+
         $this->view->searchResults=$results;
-//        dnd($this->view->searchResults);
+
+        $sql = "SELECT COUNT(ID) AS total FROM ".$datatable;
+        $resultsQuery = $_db->query($sql,[]);
+        $row = $resultsQuery->results();
+        $this->view->total_pages = ceil($row[0]->total / $results_per_page);
+
         $this->view->render('home/allwords');
     }
 
