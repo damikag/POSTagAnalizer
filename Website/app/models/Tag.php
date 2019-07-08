@@ -2,9 +2,6 @@
 
 
 class Tag extends Model {
-    private $_isLoggedIn,
-        $_sessionName,
-        $_cookieName;
 
     public $_tagList=[];
     public static $currentLoggedInUser = null;

@@ -22,9 +22,10 @@ INSERT INTO Tags SELECT DISTINCT Tag FROM AllWords
 
 =================================== WordList Table ===========================================================
 
-CREATE TABLE `POSTag`.`WordList` ( `Words` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL ,    PRIMARY KEY  (`Words`)) ENGINE = InnoDB;
+CREATE TABLE `POSTag`.`WordList` ( `ID` INT NOT NULL AUTO_INCREMENT ,  `Word` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL ,    PRIMARY KEY  (`ID`)) ENGINE = InnoDB;
 
-INSERT INTO WordList SELECT DISTINCT Word FROM AllWords
+
+INSERT INTO WordList (Word) SELECT DISTINCT Word FROM AllWords
 
 ======================================= Testing ==============================================================
 

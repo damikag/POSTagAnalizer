@@ -56,5 +56,24 @@ class HomeController extends Controller{
         $this->view->render('home/tag');
     }
 
+    public function wordAction(){
+        $results_per_page = 50;
+
+        if (isset($_GET["page"])) {
+            $page  = $_GET["page"];
+        }
+        else{
+            $page=1;
+        };
+        $start_from = ($page-1) * $results_per_page;
+        $word=new Word();
+
+        $this->view->searchResults=$word->getWords($start_from,$results_per_page);
+
+        $this->view->total_pages = ceil($word->getRecordCount() / $results_per_page);
+
+        $this->view->render('home/word');
+    }
+
 }
 
