@@ -7,7 +7,7 @@
     define('DB_HOST', '127.0.0.1');                                         // database host *** use IP address to avoid DNS lookup              
     define('DEFAULT_CONTROLLER' , 'Home');                                  // default controller if there isn't one defined in the url
     define('DEFAULT_LAYOUT','default');                                     // if no layout is set in the controller use this layout.
-    define('PROOT', '/alphapack-master/alphapack-Refactor/Website/');       // set this to '/' for a live server.
+    define('PROOT', '/POSTagAnalizer/POSTagAnalizer/Website/');       // set this to '/' for a live server.
     define('SITE_TITLE', 'POS Tag Analizer');                                  // this will be used if no site title is set
     define('CURRENT_USER_SESSION_NAME', 'kdlasfjaKjdfjASLKFDFdgRIG');       // session name for logged in
     define('REMEMBER_ME_COOKIE_NAME','ASLKFSFJO32424AFS8F9AFAF98FHI');      //cookie name for logged in user remember me function

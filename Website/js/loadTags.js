@@ -1,6 +1,8 @@
 function loadTags(word)
 {
-    $( '#display_tags' ).append("<p>Please Enter Some Words</p>");
+    $( '#display_tags' ).empty();
+    $( '#display_tagIDs' ).empty();
+    $( '#display_tags' ).append("<p>Tags for for word "+word+"</p>");
     if(word)
     {
         $.ajax({
@@ -10,14 +12,31 @@ function loadTags(word)
                 word:word,
             },
             success: function (response) {
-                // We get the element having id of display_info and put the response inside it
                 $( '#display_tags' ).append(response);
             }
         });
     }
 
-    else
-    {
-        $( '#display_tags' ).append("<p>Please Enter Some Words</p>");
-    }
 }
+
+function loadTagIDs(word,tag)
+{
+    $( '#display_tagIDs' ).empty();
+    $( '#display_tagIDs' ).append("<p>Locations for Word: "+word+" and Tag: "+tag+"</p>");
+    if(word)
+    {
+        $.ajax({
+            type: 'post',
+            url: 'loadtagIDs',
+            data: {
+                word:word,
+                tag:tag,
+            },
+            success: function (response) {
+                $( '#display_tagIDs' ).append(response);
+            }
+        });
+    }
+
+}
+

@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60b78584-bdac-48ab-b46a-d2fbdc73ee04" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Website/app/models/Word.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Website/app/views/home/word.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Website/app/acl.json" beforeDir="false" afterPath="$PROJECT_DIR$/Website/app/acl.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Website/app/controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Website/app/controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/app/models/Table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Website/app/models/Table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Website/app/models/Tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/Website/app/models/Tag.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/testcommands" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/testcommands" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/app/views/home/word.php" beforeDir="false" afterPath="$PROJECT_DIR$/Website/app/views/home/word.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/app/views/layouts/default.php" beforeDir="false" afterPath="$PROJECT_DIR$/Website/app/views/layouts/default.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/Website/config/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/js/loadTags.js" beforeDir="false" afterPath="$PROJECT_DIR$/Website/js/loadTags.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,10 +21,23 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Website/app/views/layouts/default.php">
+        <entry file="file://$PROJECT_DIR$/Website/app/controllers/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="292">
+              <caret line="91" column="22" selection-start-line="91" selection-start-column="22" selection-end-line="91" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Website/app/models/Table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="28" column="52" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
+              <folding>
+                <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -30,35 +45,33 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Website/core/Model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="21" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="21" />
+            <state relative-caret-position="-1215">
+              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Website/app/controllers/HomeController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="74" column="38" selection-start-line="74" selection-start-column="38" selection-end-line="74" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Website/app/views/home/word.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+            <state relative-caret-position="555">
+              <caret line="37" column="109" selection-start-line="37" selection-start-column="88" selection-end-line="37" selection-end-column="109" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Website/app/acl.json">
+        <entry file="file://$PROJECT_DIR$/Website/js/loadTags.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
-              <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+              <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -66,26 +79,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Website/app/models/Tag.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Website/app/views/home/tag.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Website/app/models/Word.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+            <state relative-caret-position="-563">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -93,22 +88,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Website/core/DB.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="92" column="28" selection-start-line="92" selection-start-column="22" selection-end-line="92" selection-end-column="28" />
+            <state>
+              <caret line="72" column="5" lean-forward="true" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Website/app/views/home/allwords.php">
+        <entry file="file://$PROJECT_DIR$/Website/app/models/Word.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="39" lean-forward="true" selection-end-line="61" />
+            <state relative-caret-position="465">
+              <caret line="43" column="39" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="43" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -121,23 +123,26 @@
         <option value="$PROJECT_DIR$/Website/app/lib/helpers/helpers.php" />
         <option value="$PROJECT_DIR$/Website/app/views/home/index.php" />
         <option value="$PROJECT_DIR$/Website/app/views/layouts/footer.php" />
-        <option value="$PROJECT_DIR$/Website/config/config.php" />
         <option value="$PROJECT_DIR$/Website/app/views/layouts/main_menu.php" />
         <option value="$PROJECT_DIR$/Website/core/Model.php" />
         <option value="$PROJECT_DIR$/Website/core/DB.php" />
         <option value="$PROJECT_DIR$/Website/core/View.php" />
-        <option value="$PROJECT_DIR$/Website/app/views/layouts/default.php" />
         <option value="$PROJECT_DIR$/Website/app/views/home/allwords.php" />
         <option value="$PROJECT_DIR$/Website/app/views/home/tag.php" />
-        <option value="$PROJECT_DIR$/Website/app/models/Tag.php" />
-        <option value="$PROJECT_DIR$/Website/app/controllers/HomeController.php" />
-        <option value="$PROJECT_DIR$/Website/app/acl.json" />
         <option value="$PROJECT_DIR$/Website/app/models/Word.php" />
+        <option value="$PROJECT_DIR$/Website/js/loadTag.js" />
+        <option value="$PROJECT_DIR$/Website/config/config.php" />
+        <option value="$PROJECT_DIR$/Website/app/views/layouts/default.php" />
+        <option value="$PROJECT_DIR$/Website/app/acl.json" />
         <option value="$PROJECT_DIR$/Website/app/views/home/word.php" />
+        <option value="$PROJECT_DIR$/Website/app/controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/Website/js/loadTags.js" />
+        <option value="$PROJECT_DIR$/Website/app/models/Tag.php" />
+        <option value="$PROJECT_DIR$/Website/app/models/Table.php" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="67" />
     <option name="y" value="88" />
     <option name="width" value="1293" />
@@ -285,12 +290,12 @@
       <updated>1562214680165</updated>
       <workItem from="1562214682028" duration="15114000" />
       <workItem from="1562297003898" duration="8419000" />
-      <workItem from="1562555755827" duration="1133000" />
+      <workItem from="1562555755827" duration="15380000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24666000" />
+    <option name="totallyTimeSpent" value="38913000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="7" />
@@ -387,13 +392,6 @@
     <entry file="file://$PROJECT_DIR$/Website/app/views/tools/third.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Website/config/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="134" selection-start-line="13" selection-start-column="134" selection-end-line="13" selection-end-column="134" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Website/app/menu_acl.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -436,24 +434,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Website/app/views/layouts/default.php">
+    <entry file="file://$PROJECT_DIR$/Website/app/views/home/allwords.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Website/core/Model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Website/app/models/Tag.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="142">
+          <caret line="39" lean-forward="true" selection-end-line="61" />
         </state>
       </provider>
     </entry>
@@ -464,45 +448,94 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Website/js/formValidation.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/app/views/layouts/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-83">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="60" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/app/models/Word.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="43" column="39" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="43" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/app/controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="91" column="22" selection-start-line="91" selection-start-column="22" selection-end-line="91" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Website/core/DB.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="92" column="28" selection-start-line="92" selection-start-column="22" selection-end-line="92" selection-end-column="28" />
+        <state>
+          <caret line="72" column="5" lean-forward="true" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Website/app/acl.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+          <caret line="3" column="72" selection-start-line="3" selection-start-column="72" selection-end-line="3" selection-end-column="72" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Website/app/controllers/HomeController.php">
+    <entry file="file://$PROJECT_DIR$/Website/app/models/Tag.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="74" column="38" selection-start-line="74" selection-start-column="38" selection-end-line="74" selection-end-column="38" />
+        <state relative-caret-position="-563">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Website/app/views/home/allwords.php">
+    <entry file="file://$PROJECT_DIR$/Website/js/loadTags.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="39" lean-forward="true" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Website/app/models/Word.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+        <state relative-caret-position="45">
+          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Website/app/views/home/word.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+        <state relative-caret-position="555">
+          <caret line="37" column="109" selection-start-line="37" selection-start-column="88" selection-end-line="37" selection-end-column="109" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/core/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1215">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/app/models/Table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="52" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

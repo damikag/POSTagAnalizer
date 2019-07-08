@@ -75,5 +75,30 @@ class HomeController extends Controller{
         $this->view->render('home/word');
     }
 
+    public function loadtagsAction(){
+        if(isset($_POST["word"])){
+            $tag=new Tag();
+            $res=$tag->getUniqueTags($_POST["word"]);
+//            dnd($res);
+            echo Table::getTagTable($res);
+//            $this->view->searchResults=$word->getUniqueTags();
+//            dnd("bye");
+        }
+//        dnd("hey");
+    }
+
+    public function loadtagIDsAction(){
+//        dnd($_POST);
+        if(isset($_POST["word"])and isset($_POST["tag"])){
+            $tag=new Tag();
+            $res=$tag->getTagIDs($_POST["word"],$_POST["tag"]);
+//            dnd($res);
+            echo Table::getTagIDTable($res);
+//            $this->view->searchResults=$word->getUniqueTags();
+//            dnd("bye");
+        }
+//        dnd("hey");
+    }
+
 }
 
