@@ -36,4 +36,4 @@ INSERT INTO WordList (Word) SELECT DISTINCT Word FROM AllWords
 #### Run
 
 * Start server
-* Goto url set to PROOT variable on browser
+* Goto url set to PROOT variable
