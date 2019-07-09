@@ -18,42 +18,66 @@ $total_pages=$this->total_pages;
     <div class="row">
         <div class="col-sm" style="margin: 10px; padding-top: 10px;padding-bottom: 10px;">
 
-
-            <div style="height:800px; overflow-x:auto;" class="table-wrapper-scroll-y my-custom-scrollbar">
-
-                <table class="table table-dark"  style="width:50% ">
-                    <tr>
-
-                        <th>ID</th>
-                        <th>Word</th>
-
-
-                    </tr>
-
-                    <?php if(count($results)):?>
-                        <?php foreach($results as $result): ?>
-
-                            <tr>
-                                <td><?=$result->ID?></td>
-                                <td><a href='#' class="text-white" onclick="loadTags(<?="'".$result->Word."'"?>);return false;"><?=$result->Word?>  </a></td>
-                            </tr>
+            <div class="row">
+                <h4>Select a page</h4>
+                <div style="height:100px; overflow-x:auto;" class="table-wrapper-scroll-y my-custom-scrollbar">
 
 
 
-                        <?php endforeach;?>
+                        <?php if(count($results)):?>
 
-                        <?php for ($i=1; $i<=$total_pages; $i++) {?>
-                            <a href='word?page=<?=$i?>'><?=$i?>  </a>
-                        <?php };?>
-                    <?php else: ?>
-                        <div>
-                            <h1>NO results</h1>
-                        </div>
-                    <?php endif; ?>
-                </table>
 
-                <br>
+                            <?php for ($i=1; $i<=$total_pages; $i++) {?>
+                                <a href='word?page=<?=$i?>'><?=$i?>  </a>
+                            <?php };?>
+                        <?php else: ?>
+                            <div>
+                                <h1>NO results</h1>
+                            </div>
+                        <?php endif; ?>
 
+
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row">
+
+                <div style="height:800px; overflow-x:auto;" class="table-wrapper-scroll-y my-custom-scrollbar">
+                    <h4>Select a word</h4>
+                    <br>
+                    <table class="table table-dark"  >
+                        <tr>
+
+                            <th>ID</th>
+                            <th>Word</th>
+
+
+                        </tr>
+
+                        <?php if(count($results)):?>
+                            <?php foreach($results as $result): ?>
+
+                                <tr>
+                                    <td><?=$result->ID?></td>
+                                    <td><a href='#' class="text-white" onclick="loadTags(<?="'".$result->Word."'"?>);return false;"><?=$result->Word?>  </a></td>
+                                </tr>
+
+
+
+                            <?php endforeach;?>
+
+                        <?php else: ?>
+                            <div>
+                                <h1>NO results</h1>
+                            </div>
+                        <?php endif; ?>
+                    </table>
+
+                    <br>
+
+                </div>
             </div>
 
 
