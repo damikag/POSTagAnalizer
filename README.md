@@ -4,9 +4,9 @@ This is a small toot that can be used to analyze word tags.
 #### Setup server
 
 Configuring xampp 
-    * Clone the repo to htdocs folder
-    * Set access privileges to all users 
-    * Open
+   * Clone the repo to htdocs folder
+   * Set access privileges to all users 
+   * Open
     ```
             POSTagAnalizer/Website/config/config.php
     ```
