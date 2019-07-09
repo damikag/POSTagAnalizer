@@ -59,20 +59,39 @@ class HomeController extends Controller{
     public function wordAction(){
         $results_per_page = 50;
 
-        if (isset($_GET["page"])) {
-            $page  = $_GET["page"];
+        if(isset($_POST["search-submit"])){
+//            $this->view->render('home/word');
+            $word=new Word();
+            if (empty($_POST["search_key"])){
+                $this->view->searchResults=[];
+            }else{
+                $this->view->searchResults=$word->searchWord($_POST["search_key"]);
+            }
+
+
+            $this->view->total_pages = 0;
+
+            $this->view->render('home/word');
+//            Router::route('home/word');
         }
         else{
-            $page=1;
-        };
-        $start_from = ($page-1) * $results_per_page;
-        $word=new Word();
+            if (isset($_GET["page"])) {
+                $page  = $_GET["page"];
+            }
+            else{
+                $page=1;
+            };
+            $start_from = ($page-1) * $results_per_page;
+            $word=new Word();
 
-        $this->view->searchResults=$word->getWords($start_from,$results_per_page);
+            $this->view->searchResults=$word->getWords($start_from,$results_per_page);
 
-        $this->view->total_pages = ceil($word->getRecordCount() / $results_per_page);
+            $this->view->total_pages = ceil($word->getRecordCount() / $results_per_page);
 
-        $this->view->render('home/word');
+            $this->view->render('home/word');
+        }
+
+
     }
 
     public function loadtagsAction(){

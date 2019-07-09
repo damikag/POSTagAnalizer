@@ -44,4 +44,23 @@ class Word extends Model {
         return $resultsQuery[0]->total;
     }
 
+    public function searchWord($word){
+        $sql = "SELECT * FROM ".$this->_table."  WHERE Word=? ORDER BY ID ";
+
+        $results=[];
+        $this->query($sql,[$word]);
+        $resultsQuery = $this->_db->results();
+
+        if($resultsQuery){
+            foreach($resultsQuery as $result) {
+
+                $obj = new Word();
+                $obj->populateObjData($result);
+                $results[] =$obj;
+            }
+        }
+//        dnd($results);
+        return $results;
+    }
+
 }
