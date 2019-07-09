@@ -5,6 +5,14 @@ class Table
 {
     public static function getTagTable($itemList){
         $_tag=new Tag();
+        $total=0;
+        $counts=[];
+        for ($i=0;$i<count($itemList);$i++){
+            $tmp=$_tag->getWordTagCount($_POST['word'],$itemList[$i]);
+            $total+=$tmp;
+            $counts[$i]=$tmp;
+        }
+
         $res="";
         $word=$_POST["word"];
         $word='"'.$word.'"';
@@ -13,6 +21,7 @@ class Table
                         <th>No</th>
                         <th>Tag</th>
                         <th>Count</th>
+                        <th>Percentage</th>
                         
                         
 
@@ -21,7 +30,8 @@ class Table
         for ($i=0;$i<count($itemList);$i++){
             $res.="<tr><td>".($i+1)."</td>";
             $res.="<td><a href='#'class='text-white' onclick='loadTagIDs(".$word.",".'"'.$itemList[$i].'"'.");return false;'>".$itemList[$i]."</a></td>";
-            $res.="<td>".$_tag->getWordTagCount($_POST['word'],$itemList[$i])."</td></tr>";
+            $res.="<td>".$counts[$i]."</td>";
+            $res.="<td>".round($counts[$i]*100/$total,2)." %</td></tr>";
         }
         $res.="</table>";
         return $res;

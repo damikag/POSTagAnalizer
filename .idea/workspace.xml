@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60b78584-bdac-48ab-b46a-d2fbdc73ee04" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Website/app/views/home/allwords.php" beforeDir="false" afterPath="$PROJECT_DIR$/Website/app/views/home/allwords.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/app/views/home/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Website/app/views/home/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/app/models/Table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Website/app/models/Table.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,8 +33,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Website/app/models/Table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+            <state relative-caret-position="495">
+              <caret line="33" column="59" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
               <folding>
                 <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
@@ -150,13 +149,13 @@
         <option value="$PROJECT_DIR$/Website/app/acl.json" />
         <option value="$PROJECT_DIR$/Website/js/loadTags.js" />
         <option value="$PROJECT_DIR$/Website/app/models/Tag.php" />
-        <option value="$PROJECT_DIR$/Website/app/models/Table.php" />
         <option value="$PROJECT_DIR$/Website/config/config.php" />
         <option value="$PROJECT_DIR$/Website/app/models/Word.php" />
         <option value="$PROJECT_DIR$/Website/app/controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/Website/app/views/home/word.php" />
         <option value="$PROJECT_DIR$/Website/app/views/home/index.php" />
         <option value="$PROJECT_DIR$/Website/app/views/home/allwords.php" />
+        <option value="$PROJECT_DIR$/Website/app/models/Table.php" />
       </list>
     </option>
   </component>
@@ -315,12 +314,12 @@
       <workItem from="1562214682028" duration="15114000" />
       <workItem from="1562297003898" duration="8419000" />
       <workItem from="1562555755827" duration="16732000" />
-      <workItem from="1562663863147" duration="6824000" />
+      <workItem from="1562663863147" duration="7597000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47089000" />
+    <option name="totallyTimeSpent" value="47862000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="7" />
@@ -562,8 +561,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Website/app/models/Table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        <state relative-caret-position="495">
+          <caret line="33" column="59" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
           <folding>
             <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
