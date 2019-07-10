@@ -16,7 +16,12 @@ Configuring xampp
 
 * Create database:
 	name: POSTag
+	
+```sh
+CREATE DATABASE POSTag CHARACTER SET utf8 COLLATE utf8_bin
+```
 * Execute following queries to create the tags and enter data(corpus)
+* Note: Data file should contain data in the format [word][space][tag] in each line. Otherwise pre-processing should be done.
 ```sh
 CREATE TABLE `POSTag`.`AllWords` ( `ID` INT(255) NOT NULL AUTO_INCREMENT , `Word` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL , `Tag` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL , PRIMARY KEY (`ID`)) ENGINE = InnoDB;
 
