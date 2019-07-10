@@ -1,55 +1,5 @@
 <?php
 
-    /* 
-    **********query($sql, $params = array()) *********************************
-    $sql could be of any form
-    if we use a ? to bind value these binding value must be inserted 
-    as an array in the respective order
-
-    **********insert(($table, $fields = array()) *****************************
-    
-    Use when we want to insert something
-
-    $user = DB::getInstance()->insert('users', array(
-        'username' => 'Dale',
-        'password' => 'password',
-        'salt' => 'salt',
-    ));
-    would resuult in
-
-    INSERT INTO users (`username`, `password`, `salt`) VALUES ('Dale', 'password', 'salt');
-
-    * the for loop creates the ()
-
-    ***********update($table, $id, $fields = array()) ***************************
-
-    When we need to update a specific data in a table
-
-    $user = DB::getInstance()->update('users',3,array(
-    'username' => 'ruchin',
-    'password' => 'newpassword',
-    'name' => 'ruchin Barrett'
-    ));
-
-    this would result in
-
-    UPDATE users SET username = 'ruchin', password = 'newpassword', name = 'ruchin Barrett' WHERE id = 3
-
-    $fieldString will get a string like (" fname =?, lname =?, address =?")
-
-    ***********find($table,$params=array()) **************************************
-
-    when we need to find a particular details 
-
-    $contact =DB::getInstance()->find('contacts', [
-            'conditions' => ['lname => ?', 'fname => ?' ],
-            'bind' => ['Subasinghe'],
-            'order' => "lname,fname",
-            'limit' => 5
-        ]);
-
-    */ 
-
 
 class DB {
     private static $_instance = null;
@@ -94,7 +44,6 @@ class DB {
                 $this->_results = $this->_query->fetchAll(PDO::FETCH_OBJ); //fetching data as object
                 $this->_count = $this->_query->rowCount();
                 $this->_lastInsertID = $this->_pdo->lastInsertId();
-//                dnd($this);
             }
             else{
                 $this->_error = true;

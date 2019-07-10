@@ -3,162 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="60b78584-bdac-48ab-b46a-d2fbdc73ee04" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/app/lib/helpers/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/Website/app/lib/helpers/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/app/lib/helpers/partials.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/app/views/tools/first.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/app/views/tools/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/app/views/tools/second.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/app/views/tools/third.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/css/addPromoCss.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/css/custom.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/css/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/css/form.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/css/form1.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/css/ihover.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/css/ihover.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/css/imagehover.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/css/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/css/owl.carousel.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/css/promotion_card.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/css/responsive.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/css/settingsUsername.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/css/stellarnav.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/css/sweetalert.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/404.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/Logo/Untitled-1.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/Logo/fb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/Promoter/_notes/dwsync.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/Promoter/promo_bottom_bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/Promotions/php33F4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/Promotions/php44D9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/Promotions/php4529.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/Promotions/php4576.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/Promotions/php4F01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/Promotions/php4qKyxJ.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/Promotions/php56C8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/Promotions/php7487.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/Promotions/php8842.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/Promotions/php8CA7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/Promotions/php923.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/Promotions/php9433.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/Promotions/phpAF11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/Promotions/phpBBA2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/Promotions/phpDB8F.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/Promotions/phpDC5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/Promotions/phpDDC4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/Promotions/phpE320.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/Promotions/phpENgak5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/Promotions/phpMm30ur.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/Promotions/phpN7LHHg.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/Promotions/phpQ9redd.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/Promotions/phpRcy2EY.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/Promotions/phpXCPFBN.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/Promotions/phpYwY5fB.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/Promotions/phphYkCFt.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/Promotions/phppV2M0W.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/Promotions/phpskXTSI.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/_notes/dwsync.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/about/_notes/dwsync.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/about/about-cargo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/about/about-details-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/about/about-details-bottom.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/about/about-details.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/blog/04-fashion-upgrades-classic-coat11s.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/blog/04-fashion-upgrades-classic-coat11s.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/blog/04-fashion-upgrades-classic-coats (1).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/blog/04-fashion-upgrades-classic-coats.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/blog/Girl_Soccer_Goalie.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/blog/New folder/Promotionla_Image_banner_Sept_2017.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/blog/New folder/download.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/blog/New folder/tc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/blog/_notes/dwsync.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/blog/best-movie-covers-ever.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/blog/blog_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/blog/blog_10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/blog/blog_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/blog/blog_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/blog/blog_4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/blog/blog_5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/blog/blog_6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/blog/blog_7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/blog/blog_8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/blog/blog_9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/blog/food-facebook-cover-timeline-banner-for-fb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/blog/howcuttingdo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/blog/movies.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/blog/perfect-selfie.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/blog/this-is-the-best-way-to-keep-drive-thru-fries-crispy-240457828-Christian-Fischer-1024x683.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/blog/thumb-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/blog/thumb-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/blog/thumb-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/blog/thumb-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/client/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/client/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/client/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/client/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/client/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/client/_notes/dwsync.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/contact-right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/favicon1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/footer-border.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/footer-map-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/instafeed/04-fashion-upgrades-classic-coat11s.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/instafeed/04-fashion-upgrades-classic-coats (1).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/instafeed/04-fashion-upgrades-classic-coats.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/instafeed/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/instafeed/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/instafeed/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/instafeed/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/instafeed/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/instafeed/6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/instafeed/Girl_Soccer_Goalie.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/instafeed/_notes/dwsync.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/instafeed/movies.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/instafeed/perfect-selfie.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/pattarn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/promo/_notes/dwsync.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/promo/promo_bottom_bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/promo/promo_top_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/promo/promo_troli.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/reports/2012.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/reports/2015.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/reports/2016.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/reports/2017.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/service/_notes/dwsync.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/service/service-area-bg-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/service/service-area-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/service/service-cargo-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/sidearrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/slider/20.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/slider/2021638-Zig-Ziglar-Quote-You-don-t-build-a-business-you-build-people-and.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/slider/Coffee-on-the-desktop-with-people-using-the-computer-Stock-Photo-05 (1).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/slider/_notes/dwsync.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/slider/about-details-bottom.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/slider/email-signup-1600x500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/slider/fygUqVnySTpxaY4y7djVfivi.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/slider/girl-blowing-bubbles.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/slider/slide_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/slider/slide_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/slider/slide_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/slider/xjmx1csashjww8j8jwyh.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/team/member-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/team/member-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/team/member-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/team/member-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/team/member-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/team/member-6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/testmonial/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/testmonial/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/testmonial/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/testmonial/_notes/dwsync.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/title-border.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/users/promotions/php1D03.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/users/promotions/php1FB1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/img/users/promotions/phpE3D7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/js/datepicker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/js/formValidation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/app/controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Website/app/controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/app/models/UserSessions.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/core/DB.php" beforeDir="false" afterPath="$PROJECT_DIR$/Website/core/DB.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/core/Validate.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -168,11 +16,92 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Website/app/lib/helpers/functions.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Website/app/controllers/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="570">
+              <caret line="107" column="5" selection-start-line="107" selection-start-column="5" selection-end-line="107" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Website/app/models/Tag.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-270">
+              <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Website/core/View.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-608">
+              <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Website/core/Controller.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Website/core/Cookie.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Website/core/DB.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1635">
+              <caret line="71" column="45" selection-start-line="71" selection-start-column="45" selection-end-line="71" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Website/core/Input.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Website/core/Model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1462">
+              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Website/core/Router.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1837">
+              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Website/core/Session.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -198,7 +127,6 @@
         <option value="$PROJECT_DIR$/Website/app/views/layouts/footer.php" />
         <option value="$PROJECT_DIR$/Website/app/views/layouts/main_menu.php" />
         <option value="$PROJECT_DIR$/Website/core/Model.php" />
-        <option value="$PROJECT_DIR$/Website/core/DB.php" />
         <option value="$PROJECT_DIR$/Website/core/View.php" />
         <option value="$PROJECT_DIR$/Website/app/views/home/tag.php" />
         <option value="$PROJECT_DIR$/Website/js/loadTag.js" />
@@ -208,7 +136,6 @@
         <option value="$PROJECT_DIR$/Website/app/models/Tag.php" />
         <option value="$PROJECT_DIR$/Website/config/config.php" />
         <option value="$PROJECT_DIR$/Website/app/models/Word.php" />
-        <option value="$PROJECT_DIR$/Website/app/controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/Website/app/views/home/word.php" />
         <option value="$PROJECT_DIR$/Website/app/views/home/index.php" />
         <option value="$PROJECT_DIR$/Website/app/views/home/allwords.php" />
@@ -216,10 +143,12 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Website/app/lib/helpers/partials.php" />
         <option value="$PROJECT_DIR$/Website/app/lib/helpers/functions.php" />
+        <option value="$PROJECT_DIR$/Website/app/controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/Website/core/DB.php" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="67" />
     <option name="y" value="88" />
     <option name="width" value="1293" />
@@ -320,39 +249,6 @@
               <item name="Website" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="POSTagAnalizer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="POSTagAnalizer" type="462c0819:PsiDirectoryNode" />
-              <item name="Website" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="POSTagAnalizer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="POSTagAnalizer" type="462c0819:PsiDirectoryNode" />
-              <item name="Website" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="_notes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="POSTagAnalizer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="POSTagAnalizer" type="462c0819:PsiDirectoryNode" />
-              <item name="Website" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrapcss" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="POSTagAnalizer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="POSTagAnalizer" type="462c0819:PsiDirectoryNode" />
-              <item name="Website" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="style" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="POSTagAnalizer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="POSTagAnalizer" type="462c0819:PsiDirectoryNode" />
-              <item name="Website" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -399,7 +295,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52588000" />
+    <option name="totallyTimeSpent" value="52970000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="7" />
@@ -430,31 +326,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Website/core/DB.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="72" column="5" lean-forward="true" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Website/app/controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Website/app/models/Table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="59" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
-          <folding>
-            <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Website/app/views/home/word.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -497,15 +368,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Website/app/lib/helpers/partials.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#style#0;n#strong#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/app/lib/helpers/partials.php" />
     <entry file="file://$PROJECT_DIR$/Website/app/lib/helpers/helpers.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -523,16 +386,8 @@
     <entry file="file://$PROJECT_DIR$/Website/app/views/layouts/footer.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Website/app/views/tools/first.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Website/app/views/tools/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/app/views/tools/first.php" />
+    <entry file="file://$PROJECT_DIR$/Website/app/views/tools/index.php" />
     <entry file="file://$PROJECT_DIR$/Website/app/views/restricted/index.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -559,15 +414,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Website/core/Application.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
+        <state relative-caret-position="-112">
           <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Website/core/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        <state relative-caret-position="285">
+          <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -613,63 +468,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Website/img/client/1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Website/img/client/2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Website/img/about/about-details.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Website/img/about/about-details-bottom.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Website/img/blog/04-fashion-upgrades-classic-coat11s.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Website/img/instafeed/2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Website/img/Logo/fb.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Website/img/Logo/Untitled-1.psd">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Website/img/promo/promo_top_bg.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Website/img/promo/promo_bottom_bg.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Website/img/reports/2012.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Website/img/service/service-area-bg.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Website/img/slider/20.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Website/img/slider/2021638-Zig-Ziglar-Quote-You-don-t-build-a-business-you-build-people-and.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Website/img/team/member-1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Website/img/testmonial/2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Website/img/footer-border.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Website/img/contact-right.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Website/img/favicon1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/img/client/1.jpg" />
+    <entry file="file://$PROJECT_DIR$/Website/img/client/2.jpg" />
+    <entry file="file://$PROJECT_DIR$/Website/img/about/about-details.jpg" />
+    <entry file="file://$PROJECT_DIR$/Website/img/about/about-details-bottom.jpg" />
+    <entry file="file://$PROJECT_DIR$/Website/img/blog/04-fashion-upgrades-classic-coat11s.jpg" />
+    <entry file="file://$PROJECT_DIR$/Website/img/instafeed/2.jpg" />
+    <entry file="file://$PROJECT_DIR$/Website/img/Logo/fb.jpg" />
+    <entry file="file://$PROJECT_DIR$/Website/img/Logo/Untitled-1.psd" />
+    <entry file="file://$PROJECT_DIR$/Website/img/promo/promo_top_bg.png" />
+    <entry file="file://$PROJECT_DIR$/Website/img/promo/promo_bottom_bg.jpg" />
+    <entry file="file://$PROJECT_DIR$/Website/img/reports/2012.jpg" />
+    <entry file="file://$PROJECT_DIR$/Website/img/service/service-area-bg.jpg" />
+    <entry file="file://$PROJECT_DIR$/Website/img/slider/20.jpg" />
+    <entry file="file://$PROJECT_DIR$/Website/img/slider/2021638-Zig-Ziglar-Quote-You-don-t-build-a-business-you-build-people-and.jpg" />
+    <entry file="file://$PROJECT_DIR$/Website/img/team/member-1.jpg" />
+    <entry file="file://$PROJECT_DIR$/Website/img/testmonial/2.jpg" />
+    <entry file="file://$PROJECT_DIR$/Website/img/footer-border.png" />
+    <entry file="file://$PROJECT_DIR$/Website/img/contact-right.png" />
+    <entry file="file://$PROJECT_DIR$/Website/img/favicon1.png" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -688,6 +505,20 @@
     <entry file="file://$PROJECT_DIR$/Website/.htaccess">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/Website/app/lib/helpers/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/core/DB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1635">
+          <caret line="71" column="45" selection-start-line="71" selection-start-column="45" selection-end-line="71" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Website/core/View.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-608">
@@ -695,10 +526,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Website/app/lib/helpers/functions.php">
+    <entry file="file://$PROJECT_DIR$/Website/app/controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="570">
+          <caret line="107" column="5" selection-start-line="107" selection-start-column="5" selection-end-line="107" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/app/models/Tag.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-270">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
         </state>
       </provider>
     </entry>

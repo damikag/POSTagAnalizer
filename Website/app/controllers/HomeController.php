@@ -52,7 +52,6 @@ class HomeController extends Controller{
 
         $tag=new Tag();
         $this->view->searchResults=$tag->_tagList;
-//        dnd($tag->_tagList);
         $this->view->render('home/tag');
     }
 
@@ -60,7 +59,6 @@ class HomeController extends Controller{
         $results_per_page = 50;
 
         if(isset($_POST["search-submit"])){
-//            $this->view->render('home/word');
             $word=new Word();
             if (empty($_POST["search_key"])){
                 $this->view->searchResults=[];
@@ -72,7 +70,6 @@ class HomeController extends Controller{
             $this->view->total_pages = 0;
 
             $this->view->render('home/word');
-//            Router::route('home/word');
         }
         else{
             if (isset($_GET["page"])) {
@@ -98,25 +95,16 @@ class HomeController extends Controller{
         if(isset($_POST["word"])){
             $tag=new Tag();
             $res=$tag->getUniqueTags($_POST["word"]);
-//            dnd($res);
             echo Table::getTagTable($res);
-//            $this->view->searchResults=$word->getUniqueTags();
-//            dnd("bye");
         }
-//        dnd("hey");
     }
 
     public function loadtagIDsAction(){
-//        dnd($_POST);
         if(isset($_POST["word"])and isset($_POST["tag"])){
             $tag=new Tag();
             $res=$tag->getTagIDs($_POST["word"],$_POST["tag"]);
-//            dnd($res);
             echo Table::getTagIDTable($res);
-//            $this->view->searchResults=$word->getUniqueTags();
-//            dnd("bye");
         }
-//        dnd("hey");
     }
 
 }
