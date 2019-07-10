@@ -1,0 +1,336 @@
+/*Index-h2*/
+
+h2.index-h2{
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+/*-------------------------------------------*/
+
+/*Promoter Template*/
+.top-area-bg-promoter-index{
+	background: rgba(0, 0, 0, 0) url("../img/slider/slide_1.jpg") no-repeat scroll center center / cover;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.top-area-bg-promoter-index::after {
+    background: #3c4147;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/*-------------------------------------------*/
+/*View Promotion*/
+
+.top-area-bg-food{
+	background: rgba(0, 0, 0, 0) url("../img/blog/food-facebook-cover-timeline-banner-for-fb.jpg") no-repeat scroll center center / cover;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;	
+}
+
+.top-area-bg-food::after{
+	background: #3c4147;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.top-area-bg-movies{
+	background: rgba(0, 0, 0, 0) url("../img/blog/best-movie-covers-ever.jpg") no-repeat scroll center center / cover;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;	
+}
+
+.top-area-bg-movies::after{
+	background: #3c4147;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+
+/*-------------------------------------------*/
+/*Add promotions*/
+.top-area-bg-addPromo{
+	background: rgba(0, 0, 0, 0) url("../img/blog/blog_5.jpg") no-repeat scroll center center / cover;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;	
+}
+
+.top-area-bg-addPromo::after{
+	background: #3c4147;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/*-------------------------------------------*/
+
+/*Navigation Bar*/
+.logged-user{
+	background-color:orange;
+	color: white;
+	border-radius: 10px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	transition: all;
+	transition-duration: 0.4s;
+}
+
+.logged-user:hover{
+	background-color: transparent;
+	transform: scale(1.05);
+}
+
+/*-------------------------------------------*/
+
+/*Navigation Bar- Promoter Template*/
+
+.top-area-bg-promoter-template{
+	background: rgba(0, 0, 0, 0) no-repeat scroll center center / cover;
+	background-color: #3c4147;
+    height: 100%;
+    left: 0;
+	position: absolute;
+    top: 0;
+    width: 100%;
+	
+}
+
+/*.top-area-bg-promoter-template::after {
+    background: #3c4147;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}*/
+
+/* Promoter-Template*/
+
+.service-image{
+	
+	background: rgba(0, 0, 0, 0) url("../img/Promoter/promo_bottom_bg.jpg")no-repeat scroll center center / cover;
+	float:left;
+	border: 2px solid #F39C12;
+	border-radius: 3px;
+	width: 150px;
+	height: 150px;
+	margin: 120px 0px 0px 190px;
+	
+}
+
+.brand h2{
+	text-align: right;
+	padding-top: 1px;
+	margin: 120px 190px 0px 0px;
+	color: #F39C12;
+	
+}
+
+.brand h3{
+	text-align: right;
+	right: 0px;
+	padding-top: 1px;
+	margin: 100px 190px 0px 0px;
+	color: #F39C12;
+	
+}
+
+.brand p{
+	text-align: right;
+	right: 0px;
+	padding-top: 1px;
+	margin: 0px 190px 0px 0px;
+	color: #F39C12;
+	
+}
+
+.admin h2{
+	text-align: center;
+	margin-right: 0px;
+}
+
+.box a i{
+	transition: 0.3s all;
+}
+
+.box a i:hover{
+	color: #F39C12;
+}
+
+.s1:hover ~ i{
+	color: #F39C12;
+}
+
+.s2:hover ~ i{
+	color: #F39C12;
+}
+
+.s3:hover ~ i{
+	color: #F39C12;
+}
+
+.s4:hover ~ i{
+	color: #F39C12;
+}
+
+.s5:hover ~ i{
+	color: #F39C12;
+}
+
+
+
+/*-------------------------------------------*/
+
+/*Login-Promoter*/
+
+.top-area-bg-login-promoter{
+	background: rgba(0, 0, 0, 0) url("../img/slider/fygUqVnySTpxaY4y7djVfivi.jpeg")no-repeat scroll center center / cover;
+    height: 100%;
+    left: 0;
+	position: absolute;
+    top: 0;
+    width: 100%;
+	
+}
+
+.top-area-bg-login-promoter::after {
+    background: #3c4147;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/*-------------------------------------------*/
+
+/*Login-Customer*/
+
+.top-area {
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.top-area-bg-login {
+    background: rgba(0, 0, 0, 0) url("../img/slider/Coffee-on-the-desktop-with-people-using-the-computer-Stock-Photo-05 (1).jpg") no-repeat scroll center center / cover;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.top-area-bg-login::after {
+    background: #3c4147;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/*---------------------------------------*/
+
+/*SignUp-Customer*/
+
+.top-area-bg-signup {
+    background: rgba(0, 0, 0, 0) url("../img/slider/email-signup-1600x500.jpg") no-repeat scroll center center / cover;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.top-area-bg-signup::after{
+	background: #3c4147;
+	opacity: 0.9;
+	height: 100%;
+	left:0;
+	position: absolute;
+	width: 100%;
+}
+
+/*.top-area-bg-signup::after {
+    background: #3c4147;
+    height: 100%;
+    left: 0;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}*/
+
+/*-------------------------------------------*/
+
+/*SignUp-promoter*/
+
+.top-area-bg-signup-promoter {
+    background: rgba(0, 0, 0, 0) url("../img/slider/2021638-Zig-Ziglar-Quote-You-don-t-build-a-business-you-build-people-and.jpg") no-repeat scroll center center / cover;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.top-area-bg-signup-promoter::after {
+    background: #3c4147;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+
+/*---------------------------------------*/
+
+/*Footer*/
+
+.footer-categories{
+	height: 200px;
+	width:300px;
+	float: left;
+}

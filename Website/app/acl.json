@@ -1,0 +1,9 @@
+{
+    "Guest" : {
+        "denied": [],
+        "Home" : ["index","allwords","tag","word","loadtags","loadtagIDs"]
+
+        
+    }
+}
+
