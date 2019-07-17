@@ -35,8 +35,8 @@ class Tag extends Model {
 
     public function getUniqueTags($word){
 
-        $sql = "SELECT DISTINCT Tag FROM AllWords WHERE Word=?";
-
+//        $sql = "SELECT DISTINCT Tag FROM AllWords WHERE Word=?";
+        $sql = "SELECT * FROM WordList WHERE Word=?";
         $results=[];
         $this->query($sql,[$word]);
         $resultsQuery = $this->_db->results();
@@ -49,11 +49,13 @@ class Tag extends Model {
                 $results[] =$obj;
             }
         }
+//        dnd($results);
         $res=[];
         foreach ($results as $result){
-            $res[]=$result->Tag;
+            $res[]=$result->Tags;
+            $res[]=$result->Counts;
         }
-
+//        dnd($res);
         return $res;
     }
 

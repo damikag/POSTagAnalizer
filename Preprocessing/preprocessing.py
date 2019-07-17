@@ -61,7 +61,7 @@ class Word:
         else:
             print 'Tag not found'    
 
-    def writeWordTtoFile(self,outputfile,input_file):
+    def writeWordToFile(self,outputfile,input_file):
         for tag in self.tag_dic.keys():
             for ln in self.tag_dic[tag]:
                 if self.word=='\\':
@@ -69,12 +69,37 @@ class Word:
                 else:
                     outputfile.write(self.word+' '+tag+' '+str(ln)+' '+input_file+'\n')
 
+    def writeWordTags(self,outputfile):
+        lst=self.tag_dic.keys()
+        cnts=[]
+        for tag in lst:
+            cnts.append(str(self.wordTag_count[tag]))
+
+        write_line=self.word+' '+str(','.join(lst)+' '+str(','.join(cnts)))
+        outputfile.write(write_line+'\n')
+            
+
+
+
+
 def WriteProcessedCorpus(Word_dictionary,outputfile_name,input_file):
     outputfile=open(outputfile_name,"w")
 
     for word in Word_dictionary.keys():
         if Word_dictionary[word].noOfTags() >1:
-            Word_dictionary[word].writeWordTtoFile(outputfile,input_file)
+            Word_dictionary[word].writeWordToFile(outputfile,input_file)
+    
+    outputfile.close()
+
+def WriteProcessedUniquwWords(Word_dictionary,outputfile_name):
+    outputfile=open(outputfile_name,"w")
+
+    for word in Word_dictionary.keys():
+    
+        if Word_dictionary[word].noOfTags() >1:
+            Word_dictionary[word].writeWordTags(outputfile)
+
+    outputfile.close()
 
 
 with open(input_file) as file: 
@@ -102,6 +127,14 @@ print("--- %s seconds ---" % (time.time() - start_time))
 start_time=time.time()
 
 WriteProcessedCorpus(Word_dictionary,"/home/damika/Documents/Uni/Other/NLP Internship/POSTagAnalizer/python/Testing/newCorpus.txt","tagged00")
+
+print "Finished writing"
+print("--- %s seconds ---" % (time.time() - start_time))
+
+
+start_time=time.time()
+
+WriteProcessedUniquwWords(Word_dictionary,"/home/damika/Documents/Uni/Other/NLP Internship/POSTagAnalizer/python/Testing/uniqueWords.txt")
 
 print "Finished writing"
 print("--- %s seconds ---" % (time.time() - start_time))

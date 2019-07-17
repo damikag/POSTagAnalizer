@@ -4,13 +4,12 @@
 class Table
 {
     public static function getTagTable($itemList){
-        $_tag=new Tag();
         $total=0;
-        $counts=[];
+        $tagList = explode(',', $itemList[0]);
+        $counts=array_map('intval', explode(',', $itemList[1]));
+
         for ($i=0;$i<count($itemList);$i++){
-            $tmp=$_tag->getWordTagCount($_POST['word'],$itemList[$i]);
-            $total+=$tmp;
-            $counts[$i]=$tmp;
+            $total+=$counts[$i];
         }
 
         $res="";
@@ -29,7 +28,7 @@ class Table
                     </tr>";
         for ($i=0;$i<count($itemList);$i++){
             $res.="<tr><td>".($i+1)."</td>";
-            $res.="<td><a href='#'class='text-white' onclick='loadTagIDs(".$word.",".'"'.$itemList[$i].'"'.");return false;'>".$itemList[$i]."</a></td>";
+            $res.="<td><a href='#'class='text-white' onclick='loadTagIDs(".$word.",".'"'.$tagList[$i].'"'.");return false;'>".$tagList[$i]."</a></td>";
             $res.="<td>".$counts[$i]."</td>";
             $res.="<td>".round($counts[$i]*100/$total,2)." %</td></tr>";
         }

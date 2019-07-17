@@ -9,3 +9,25 @@ LOAD DATA INFILE '/home/damika/Documents/Uni/Other/NLP Internship/POSTagAnalizer
 
 
 LOAD DATA INFILE '/home/damika/Documents/Uni/Other/NLP Internship/POSTagAnalizer/python/Testing/newCorpus.txt' INTO TABLE AllWords FIELDS TERMINATED BY ' ' LINES TERMINATED BY '\n' (Word,Tag,Line_number,Filename)
+
+
+
+
+
+
+
+
+
+
+
+
+CREATE TABLE `POSTagNew`.`WordList` ( `ID` INT(255) NOT NULL AUTO_INCREMENT ,  `Word` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL ,  `Tags` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL ,  `Counts` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL ,    PRIMARY KEY  (`ID`)) ENGINE = InnoDB;
+
+
+
+
+LOAD DATA INFILE '/home/damika/Documents/Uni/Other/NLP Internship/POSTagAnalizer/python/Testing/uniqueWords.txt' INTO TABLE WordList FIELDS TERMINATED BY ' ' LINES TERMINATED BY '\n' (Word,Tags,Counts)
+
+
+
+
