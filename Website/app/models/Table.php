@@ -41,12 +41,14 @@ class Table
         $res.="<table class=\"table table-dark\"  style=\"width:50%\">";
         $res.="<tr>
                         <th>Ind</th>
-                        <th>Line No</th>                   
+                        <th>Line No</th>   
+                        <th>File Name</th>                   
                     </tr>";
 
         for ($i=0;$i<count($itemList);$i++){
             $res.="<tr><td>".($i+1)."</td>";
-            $res.="<td>".$itemList[$i]."</td>";
+            $res.="<td>".$itemList[$i][0]."</td>";
+            $res.="<td>".$itemList[$i][1]."</td>";
             $res.="</tr>";
         }
         $res.="</table>";

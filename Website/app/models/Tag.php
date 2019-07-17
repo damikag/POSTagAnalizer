@@ -81,7 +81,7 @@ class Tag extends Model {
         }
         $res=[];
         foreach ($results as $result){
-            $res[]=$result->ID;
+            $res[]=[$result->Line_number,$result->Filename];
         }
 
         return $res;

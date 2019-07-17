@@ -12,6 +12,9 @@ function loadTags(word)
                 word:word,
             },
             success: function (response) {
+                $( '#display_tags' ).empty();
+                $( '#display_tagIDs' ).empty();
+                $( '#display_tags' ).append("<p>Tags for for word "+word+"</p>");
                 $( '#display_tags' ).append(response);
             }
         });
@@ -33,6 +36,9 @@ function loadTagIDs(word,tag)
                 tag:tag,
             },
             success: function (response) {
+                $( '#display_tagIDs' ).empty();
+                $( '#display_tagIDs' ).append("<p>Locations for Word: "+word+" and Tag: "+tag+"</p>");
+
                 $( '#display_tagIDs' ).append(response);
             }
         });
