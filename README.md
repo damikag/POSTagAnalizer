@@ -1,6 +1,19 @@
 # POS Tag Analiser
 This is a small toot that can be used to analyze word tags.
 ## Installation
+
+#### Pre-processing the Corpus
+
+
+   * First merge each parts of the Corpus into ```Corpus.txt```. 
+   
+        ```python merge.ph [file name] [OPTIONAL: path to working directory]```
+   * If format erros are detected, correct them before next steps.
+   
+   * Run ```python preprocess.py Corpus.txt [OPTIONAL Working directory]``` to pre-process the corpus. If errors detected correct them before procead.
+    (NOTE: ```merge.py ```should be run before the previous script.)
+   
+
 #### Setup server
 
 Configuring xampp 
