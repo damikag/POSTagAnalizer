@@ -1,8 +1,11 @@
 import time
+import sys
+
 start_time = time.time()
 # input_file=raw_input()
 # working_dir='/home/damika/Documents/Uni/Other/NLP Internship/POSTagAnalizer/python/'
-input_file='/home/damika/Documents/Uni/Other/NLP Internship/POSTagAnalizer/python/tagged.txt'
+# input_file='/home/damika/Documents/Uni/Other/NLP Internship/POSTagAnalizer/python/tagged.txt'
+input_file=sys.argv[1]
 # op=open("out.out",'w')
 Word_dictionary={}
 junk_lines=[]

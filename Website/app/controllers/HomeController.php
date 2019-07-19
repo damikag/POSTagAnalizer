@@ -107,5 +107,34 @@ class HomeController extends Controller{
         }
     }
 
+    public function  tagtowordAction(){
+        $tag=new Tag();
+        if(isset($_POST["search-submit"])){
+
+            if (empty($_POST["search_key"])){
+                $this->view->tagList=[];
+            }else{
+                $this->view->tagList=$tag->searchTag($_POST["search_key"]);
+            }
+
+
+
+
+            $this->view->render('home/tagtoword');
+        }
+        else{
+
+            $this->view->tagList=$tag->getTagList();
+            $this->view->render('home/tagtoword');
+        }
+    }
+
+    public function  loadtagWordsAction(){
+        if(isset($_POST["tag"])){
+            $tag=new Tag();
+            $res=$tag->getTagtoWordList($_POST["tag"]);
+            echo Table::getWordTable($res);
+        }
+    }
 }
 

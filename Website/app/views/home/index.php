@@ -25,6 +25,9 @@ $results = $this->searchResults ;
         <br>
         <a href="home/tag" class="text-center text-white"><h3>Unique Tag List</h3></a>
 
+        <br>
+        <a href="home/tagtoword" class="text-center text-white"><h3>Tag to Word List</h3></a>
+
 
 
     </div>

@@ -2,7 +2,7 @@ function loadTags(word)
 {
     $( '#display_tags' ).empty();
     $( '#display_tagIDs' ).empty();
-    $( '#display_tags' ).append("<p>Tags for for word "+word+"</p>");
+    $( '#display_tags' ).append("<p>Tags for word "+word+"</p>");
     if(word)
     {
         $.ajax({
@@ -14,7 +14,7 @@ function loadTags(word)
             success: function (response) {
                 $( '#display_tags' ).empty();
                 $( '#display_tagIDs' ).empty();
-                $( '#display_tags' ).append("<p>Tags for for word "+word+"</p>");
+                $( '#display_tags' ).append("<p>Tags for word "+word+"</p>");
                 $( '#display_tags' ).append(response);
             }
         });
@@ -46,3 +46,24 @@ function loadTagIDs(word,tag)
 
 }
 
+function loadTagWords(tag)
+{
+    $( '#display_tagWords' ).empty();
+    $( '#display_tagWords' ).append("<p>Processing... Wait for the Tag: "+tag+"</p>");
+    if(tag)
+    {
+        $.ajax({
+            type: 'post',
+            url: 'loadtagWords',
+            data: {
+                tag:tag,
+            },
+            success: function (response) {
+                $( '#display_tagWords' ).empty();
+                $( '#display_tagWords' ).append("<p>Words tagged with: "+tag+"</p>");
+                $( '#display_tagWords' ).append(response);
+            }
+        });
+    }
+
+}

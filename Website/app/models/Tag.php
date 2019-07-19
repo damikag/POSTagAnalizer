@@ -88,4 +88,50 @@ class Tag extends Model {
 
         return $res;
     }
+
+    public function getTagList(){
+        return $this->_tagList;
+    }
+
+    public function  getTagtoWordList($tag){
+        $sql = "SELECT DISTINCT Word FROM AllWords WHERE Tag=?";
+        $results=[];
+        $this->query($sql,[$tag]);
+        $resultsQuery = $this->_db->results();
+
+        if($resultsQuery){
+            foreach($resultsQuery as $result) {
+
+                $obj = new Tag();
+                $obj->populateObjData($result);
+                $results[] =$obj;
+            }
+        }
+        $res=[];
+        foreach ($results as $result){
+            $res[]=$result->Word;
+        }
+
+        return $res;
+    }
+
+    public function searchTag($tag){
+        $sql = "SELECT DISTINCT Tag FROM AllWords WHERE Tag=? ORDER BY ID ";
+
+        $results=[];
+        $this->query($sql,[$tag]);
+        $resultsQuery = $this->_db->results();
+
+        if($resultsQuery){
+            foreach($resultsQuery as $result) {
+
+//                $obj = new Tag();
+//                $obj->populateObjData($result);
+                $results[] =$result->Tag;
+            }
+        }
+//        dnd($results);
+        return $results;
+    }
+
 }

@@ -39,7 +39,7 @@ class Table
         $res="";
         $res.="<table class=\"table table-dark\"  style=\"width:50%\">";
         $res.="<tr>
-                        <th>Ind</th>
+                        <th>No</th>
                         <th>Line No</th>   
                         <th>File Name</th>                   
                     </tr>";
@@ -54,4 +54,20 @@ class Table
         return $res;
     }
 
+    public static function getWordTable($wordList){
+        $res="";
+        $res.="<table class=\"table table-dark\"  style=\"width:50%\">";
+        $res.="<tr>
+                        <th>No</th>
+                        <th>Word</th>                      
+                    </tr>";
+
+        for ($i=0;$i<count($wordList);$i++){
+            $res.="<tr><td>".($i+1)."</td>";
+            $res.="<td>".$wordList[$i]."</td>";
+            $res.="</tr>";
+        }
+        $res.="</table>";
+        return $res;
+    }
 }

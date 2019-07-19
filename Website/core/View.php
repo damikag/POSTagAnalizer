@@ -21,7 +21,8 @@ class View {
     public $diplayErrors,
            $searchResults,
            $currentUser,
-           $total_pages;
+           $total_pages,
+           $tagList;
     
 
     public function __construct() {
