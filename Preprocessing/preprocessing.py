@@ -1,16 +1,6 @@
 import time
 import sys
 
-start_time = time.time()
-# input_file=raw_input()
-# working_dir='/home/damika/Documents/Uni/Other/NLP Internship/POSTagAnalizer/python/'
-# input_file='/home/damika/Documents/Uni/Other/NLP Internship/POSTagAnalizer/python/tagged.txt'
-input_file=sys.argv[1]
-# op=open("out.out",'w')
-Word_dictionary={}
-junk_lines=[]
-print "Reading........"
-
 class Word:
     def __init__(self,word):
         self.tag_dic={}
@@ -64,13 +54,13 @@ class Word:
         else:
             print 'Tag not found'    
 
-    def writeWordToFile(self,outputfile,input_file):
+    def writeWordToFile(self,outputfile):
         for tag in self.tag_dic.keys():
             for ln in self.tag_dic[tag]:
                 if self.word=='\\':
-                    outputfile.write('\\\\ '+tag+' '+str(ln)+' '+input_file+'\n')
+                    outputfile.write('\\\\ '+tag+' '+str(ln)+'\n')
                 else:
-                    outputfile.write(self.word+' '+tag+' '+str(ln)+' '+input_file+'\n')
+                    outputfile.write(self.word+' '+tag+' '+str(ln)+'\n')
 
     def writeWordTags(self,outputfile):
         lst=self.tag_dic.keys()
@@ -85,12 +75,12 @@ class Word:
 
 
 
-def WriteProcessedCorpus(Word_dictionary,outputfile_name,input_file):
+def WriteProcessedCorpus(Word_dictionary,outputfile_name):
     outputfile=open(outputfile_name,"w")
 
     for word in Word_dictionary.keys():
         if Word_dictionary[word].noOfTags() >1:
-            Word_dictionary[word].writeWordToFile(outputfile,input_file)
+            Word_dictionary[word].writeWordToFile(outputfile)
     
     outputfile.close()
 
@@ -104,8 +94,26 @@ def WriteProcessedUniquwWords(Word_dictionary,outputfile_name):
 
     outputfile.close()
 
+# ==========================================================================
 
-with open(input_file) as file: 
+start_time = time.time()
+
+try:
+    input_file=str(sys.argv[1])
+    working_dir=""
+
+    if len(sys.argv)>=3:
+        working_dir=str(sys.argv[2])
+except:
+    print "Command line argument error"
+    sys.exit()
+
+
+Word_dictionary={}
+junk_lines=[]
+print "Reading........"
+
+with open(working_dir+input_file) as file: 
     line_number=0 
 
     for line in file:
@@ -122,14 +130,14 @@ with open(input_file) as file:
                 Word_dictionary[word]= Word(word)
                 Word_dictionary[word].addPair(tag,line_number)
         else:
-            junk_lines.append(line)
+            junk_lines.append([line_number,line])
 
 print "Finished reading"
 print("--- %s seconds ---" % (time.time() - start_time))
 
 start_time=time.time()
 
-WriteProcessedCorpus(Word_dictionary,"/home/damika/Documents/Uni/Other/NLP Internship/POSTagAnalizer/python/Testing/newCorpus.txt","tagged00")
+WriteProcessedCorpus(Word_dictionary,working_dir+"newCorpus.txt")
 
 print "Finished writing"
 print("--- %s seconds ---" % (time.time() - start_time))
@@ -137,7 +145,17 @@ print("--- %s seconds ---" % (time.time() - start_time))
 
 start_time=time.time()
 
-WriteProcessedUniquwWords(Word_dictionary,"/home/damika/Documents/Uni/Other/NLP Internship/POSTagAnalizer/python/Testing/uniqueWords.txt")
+WriteProcessedUniquwWords(Word_dictionary,working_dir+"uniqueWords.txt")
 
 print "Finished writing"
 print("--- %s seconds ---" % (time.time() - start_time))
+
+if len(junk_lines):
+    print "Some junk lines found.\nWriting to newJunk.txt"
+
+    junkFile=open("newJunk.txt","w")
+
+    for line in junk_lines:
+        junkFile.write(str(line[0])+line[1])
+
+    print "Finished writing to newJunk.txt"

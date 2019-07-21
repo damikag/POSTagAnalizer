@@ -41,13 +41,13 @@ class Table
         $res.="<tr>
                         <th>No</th>
                         <th>Line No</th>   
-                        <th>File Name</th>                   
+                  
                     </tr>";
 
         for ($i=0;$i<count($itemList);$i++){
             $res.="<tr><td>".($i+1)."</td>";
             $res.="<td>".$itemList[$i][0]."</td>";
-            $res.="<td>".$itemList[$i][1]."</td>";
+//            $res.="<td>".$itemList[$i][1]."</td>";
             $res.="</tr>";
         }
         $res.="</table>";
