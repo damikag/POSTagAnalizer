@@ -31,10 +31,10 @@ $total_pages=$this->total_pages;
 
 
                         <?php if(count($results) and $total_pages>=1):?>
-                            <h4>Select a page</h4>
+                            <h4>Select a page</h4><br>
                         <br>
-                            <div style="height:100px; overflow-x:auto;" class="table-wrapper-scroll-y my-custom-scrollbar">
-
+                            <div style="height:100px; overflow-x:auto;" class=" table-wrapper-scroll-y my-custom-scrollbar">
+                                    <br>
 
                             <?php for ($i=1; $i<=$total_pages; $i++) {?>
                                 <a href='word?page=<?=$i?>'><?=$i?>  </a>
@@ -50,7 +50,7 @@ $total_pages=$this->total_pages;
 
             <div class="row">
 
-                <div style="height:800px; overflow-x:auto;" class="table-wrapper-scroll-y my-custom-scrollbar">
+                <div style="height:400px; overflow-x:auto;" class="table-wrapper-scroll-y my-custom-scrollbar">
 
 
 
