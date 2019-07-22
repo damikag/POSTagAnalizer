@@ -46,7 +46,7 @@ class Table
 
         for ($i=0;$i<count($itemList);$i++){
             $res.="<tr><td>".($i+1)."</td>";
-            $res.="<td>".$itemList[$i][0]."</td>";
+            $res.="<td>".number_format($itemList[$i][0])."</td>";
 //            $res.="<td>".$itemList[$i][1]."</td>";
             $res.="</tr>";
         }

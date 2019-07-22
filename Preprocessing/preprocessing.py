@@ -68,7 +68,12 @@ class Word:
         for tag in lst:
             cnts.append(str(self.wordTag_count[tag]))
 
-        write_line=self.word+' '+str(','.join(lst)+' '+str(','.join(cnts)))
+        if self.word=='\\':
+            write_line='\\\\ '+str(','.join(lst)+' '+str(','.join(cnts)))
+        else:
+            write_line=self.word+' '+str(','.join(lst)+' '+str(','.join(cnts)))
+
+        
         outputfile.write(write_line+'\n')
             
 
