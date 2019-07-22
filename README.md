@@ -36,9 +36,9 @@ CREATE DATABASE POSTag CHARACTER SET utf8 COLLATE utf8_bin
 * Execute following queries to create the tags and enter data(corpus)
 * Note: Data file should contain data in the format [word][space][tag] in each line. Otherwise pre-processing should be done.
 ```sh
-CREATE TABLE `POSTag`.`AllWords` ( `ID` INT(255) NOT NULL AUTO_INCREMENT ,  `Word` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL ,  `Tag` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL ,  `Line_number` INT(255) NOT NULL ,    PRIMARY KEY  (`ID`)) ENGINE = InnoDB;
+CREATE TABLE `POSTag`.`AllWords` ( `ID` INT(255) NOT NULL AUTO_INCREMENT ,  `Word` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL ,  `Tag` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL ,  `Line_number` INT(255) NOT NULL ,  `Filename` VARCHAR(500) NOT NULL ,    PRIMARY KEY  (`ID`)) ENGINE = InnoDB;
 
-LOAD DATA INFILE '[path to /newCorpus.txt]' INTO TABLE AllWords FIELDS TERMINATED BY ' ' LINES TERMINATED BY '\n' (Word,Tag,Line_number);
+LOAD DATA INFILE '[path to /newCorpus.txt]' INTO TABLE AllWords FIELDS TERMINATED BY ' ' LINES TERMINATED BY '\n' (Word,Tag,Line_number,Filename);
 
 CREATE TABLE `POSTag`.`Tags` ( `Tag` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL ,    PRIMARY KEY  (`Tag`)) ENGINE = InnoDB;
 

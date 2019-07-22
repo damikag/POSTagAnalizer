@@ -5,20 +5,21 @@ start_time = time.time()
 
 try:
     input_file=str(sys.argv[1])
-    working_dir=""
+    save_to=""
 
     if len(sys.argv)>=3:
-        working_dir=str(sys.argv[2])
+        save_to=str(sys.argv[2])
 except:
     print "Command line argument error"
     sys.exit()
 
 junk_lines=[]
 formated_lines=[]
+input_file_name=input_file.strip().split('/')[-1]
 
 print "\nReading........"
 
-with open(working_dir+input_file,'r') as file: 
+with open(input_file,'r') as file: 
     line_number=0 
 
     for line in file:
@@ -28,7 +29,7 @@ with open(working_dir+input_file,'r') as file:
         if line=='\n':
             continue
         if len(line.strip().split())==2:
-            formated_lines.append(line)           
+            formated_lines.append(line.strip()+' '+str(line_number))           
         else:
             
             junk_lines.append([line_number,line])
@@ -36,13 +37,12 @@ with open(working_dir+input_file,'r') as file:
 print "Finished reading"
 print("--- %s seconds ---\n" % (time.time() - start_time))
 
-
 if len(junk_lines):
     print "Merging stopped."
     print str(len(junk_lines))+" line/lines is/are out of format [word][space][tag]"
     print "Writing to junk.txt"
     
-    junkFile=open(working_dir+'junk.txt',"w")
+    junkFile=open(save_to+'junk.txt',"w")
 
     for line in junk_lines:
         junkFile.write(str(line[0])+':-')
@@ -61,9 +61,9 @@ else:
 
     start_time=time.time()
 
-    corpusFile=open(working_dir+"Corpus.txt","a")
+    corpusFile=open(save_to+"Corpus.txt","a")
     for line in formated_lines:
-        corpusFile.write(line)
+        corpusFile.write(line.strip()+' '+input_file_name+'\n')
     corpusFile.close()
 
     start_time=time.time()
