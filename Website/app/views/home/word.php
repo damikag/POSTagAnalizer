@@ -65,11 +65,17 @@ $total_pages=$this->total_pages;
 
 
                             </tr>
-                            <?php foreach($results as $result): ?>
+                            <?php foreach($results as $result):
+                                $loadWord=$result->Word;?>
+                                <?php if($result->Word=='\'\''):
+                                    $loadWord="\'\'";
 
+                                    ?>
+
+                                <?php endif; ?>
                                 <tr>
                                     <td><?=$result->ID?></td>
-                                    <td><a href='#' class="text-white" onclick="loadTags(<?="'".$result->Word."'"?>);return false;"><?=$result->Word?>  </a></td>
+                                    <td><a href='#' class="text-white" onclick="loadTags(<?="'".$loadWord."'"?>);return false;"><?=$result->Word?>  </a></td>
                                 </tr>
 
 
