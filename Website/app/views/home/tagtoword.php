@@ -29,7 +29,7 @@ $tagList=$this->tagList;
             <?php if(count($tagList)):?>
                 <h4>Select a tag</h4>
                 <br>
-                <div style="height:125px; width: 30%; overflow-x:auto;" class="table-wrapper-scroll-y my-custom-scrollbar">
+                <div style="height:300px; width: 30%; overflow-x:auto;" class="table-wrapper-scroll-y my-custom-scrollbar">
 
                     <ul>
 
@@ -46,18 +46,20 @@ $tagList=$this->tagList;
             <?php endif; ?>
 
         </div>
+
+        <div class="col-sm" >
+
+            <div id="display_tagWords" style="height:500px; width: 50%; overflow-x:auto;" class="table-wrapper-scroll-y my-custom-scrollbar">
+
+            </div>
+
+        </div>
+
     </div>
 
 
     <div class="row">
 
-        <div class="col-sm" >
-
-                <div id="display_tagWords" style="height:300px; width: 30%; overflow-x:auto;" class="table-wrapper-scroll-y my-custom-scrollbar">
-
-                </div>
-
-        </div>
 
     </div>
 

@@ -19,13 +19,13 @@ $results = $this->searchResults ;
         <h1 class="text-center"> POS Tag Analiser</h1>
         <br>
         <br>
-        <a href="word" class="text-center text-white"><h3>Unique Word List</h3></a>
+        <a href="<?=PROOT?>home/word" class="text-center text-white"><h3>Unique Word List</h3></a>
         <br>
-        <a href="allwords" class="text-center text-white"><h3>Full Corpus</h3></a>
+        <a href="<?=PROOT?>home/allwords" class="text-center text-white"><h3>Full Corpus</h3></a>
         <br>
-        <a href="tag" class="text-center text-white"><h3>Unique Tag List</h3></a>
-        <br>
-        <a href="tagtoword" class="text-center text-white"><h3>Tag to Word List</h3></a>
+<!--        <a href="--><?//=PROOT?><!--home/tag" class="text-center text-white"><h3>Unique Tag List</h3></a>-->
+        
+        <a href="<?=PROOT?>home/tagtoword" class="text-center text-white"><h3>Tag to Word List</h3></a>
 
 
 
