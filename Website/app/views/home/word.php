@@ -69,6 +69,10 @@ $total_pages=$this->total_pages;
                                 $loadWord=$result->Word;?>
                                 <?php if($result->Word=='\'\''):
                                     $loadWord="\'\'";
+                                    elseif ($result->Word=='\''):
+                                        $loadWord="\'";
+                                    elseif ($result->Word=="\""):
+                                        $loadWord='&quot';
 
                                     ?>
 

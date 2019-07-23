@@ -14,7 +14,24 @@ class Table
 
         $res="";
         $word=$_POST["word"];
-        $word='"'.$word.'"';
+        if($word=='\'\''){
+            $word="&#39&#39";
+            $word='"'.$word.'"';
+        }
+        elseif ($word=='\''){
+            $word="&#39";
+            $word='"'.$word.'"';
+        }
+        elseif ($word=="\""){
+            $word='&quot';
+            $word='&#39'.$word.'&#39';
+        }
+        else{
+            $word='"'.$word.'"';
+        }
+
+
+
         $res.="<table class=\"table table-dark\"  style=\"width:50%\">";
         $res.="<tr>
                         <th>No</th>
