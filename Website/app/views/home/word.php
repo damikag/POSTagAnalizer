@@ -21,42 +21,44 @@ $total_pages=$this->total_pages;
         <button type="submit" class="btn btn-primary"  name="search-submit"    id = "search-submit">Search</button>
     </form>
 
+    <div class="row " style="padding-left: 2%;padding-right: 2%">
+
+
+
+
+            <?php if(count($results) and $total_pages>=1):?>
+                <h4>Select a page</h4><br>
+
+                <div style="height:70px; overflow-x:auto;" class=" table-wrapper-scroll-y my-custom-scrollbar">
+
+
+                    <?php for ($i=1; $i<=$total_pages; $i++) {?>
+                        <a href='word?page=<?=$i?>'><?=$i?>  </a>
+                    <?php };?>
+                </div>
+            <?php endif; ?>
+
+
+
+
+    </div>
+    <br>
     <div class="row">
 
 
         <div class="col-sm" style="margin: 10px; padding-top: 10px;padding-bottom: 10px;">
 
-            <div class="row">
 
 
 
-                        <?php if(count($results) and $total_pages>=1):?>
-                            <h4>Select a page</h4><br>
-                        <br>
-                            <div style="height:100px; overflow-x:auto;" class=" table-wrapper-scroll-y my-custom-scrollbar">
-                                    <br>
-
-                            <?php for ($i=1; $i<=$total_pages; $i++) {?>
-                                <a href='word?page=<?=$i?>'><?=$i?>  </a>
-                            <?php };?>
-                            </div>
-                        <?php endif; ?>
-
-
-
-            </div>
-
-            <br>
-
-            <div class="row">
-
-                <div style="height:400px; overflow-x:auto;" class="table-wrapper-scroll-y my-custom-scrollbar">
 
 
 
                         <?php if(count($results)):?>
                             <h4>Select a word</h4>
-                            <br>
+
+                            <div style="height:400px; overflow-x:auto;" class="table-wrapper-scroll-y my-custom-scrollbar">
+
                             <table class="table table-dark"  >
                             <tr>
 
@@ -86,6 +88,7 @@ $total_pages=$this->total_pages;
 
                             <?php endforeach;?>
                             </table>
+                </div>
                         <?php else: ?>
                             <div>
                                 <h5>Sorry! Word not found</h5>
@@ -95,27 +98,30 @@ $total_pages=$this->total_pages;
 
                     <br>
 
-                </div>
-            </div>
+
+
 
 
         </div>
 
         <div class="col-sm" >
-            <div >
-                <br>
-                <br>
-                <div id="display_tags" style="height:300px; overflow-x:auto;" class="table-wrapper-scroll-y my-custom-scrollbar">
-
-                </div>
-
-                <div id="display_tagIDs" style="height:400px; overflow-x:auto;" class="table-wrapper-scroll-y my-custom-scrollbar">
-
-                </div>
+            <div id="display_tags">
 
             </div>
+<!--                <div id="display_tags" style="height:300px; overflow-x:auto;" class="table-wrapper-scroll-y my-custom-scrollbar">-->
+<!---->
+<!--                </div>-->
 
 
+        </div>
+
+        <div class="col-sm">
+            <div id="display_tagIDs">
+
+            </div>
+<!--            <div id="display_tagIDs" style="height:300px; overflow-x:auto;" class="table-wrapper-scroll-y my-custom-scrollbar">-->
+<!---->
+<!--            </div>-->
         </div>
 
     </div>

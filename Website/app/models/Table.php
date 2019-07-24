@@ -54,6 +54,7 @@ class Table
     }
     public static function getTagIDTable($itemList){
         $res="";
+        $res.="<div style=\"height:400px; overflow-x:auto;\" class=\"table-wrapper-scroll-y my-custom-scrollbar\">";
         $res.="<table class=\"table table-dark\"  style=\"width:100%\">";
         $res.="<tr>
                         <th>No</th>
@@ -68,11 +69,13 @@ class Table
             $res.="</tr>";
         }
         $res.="</table>";
+        $res.="</div>";
         return $res;
     }
 
     public static function getWordTable($tag,$wordList){
         $res="";
+        $res.="<div style=\"height:400px; overflow-x:auto;\" class=\"table-wrapper-scroll-y my-custom-scrollbar\">";
         $res.="<table class=\"table table-dark\"  style=\"width:100%\">";
         $res.="<tr>
                         <th>No</th>
@@ -104,6 +107,7 @@ class Table
             $res.="</tr>";
         }
         $res.="</table>";
+        $res.="</div>";
         return $res;
     }
 }
