@@ -32,7 +32,7 @@ class Table
 
 
 
-        $res.="<table class=\"table table-dark\"  style=\"width:50%\">";
+        $res.="<table class=\"table table-dark\"  style=\"width:100%\">";
         $res.="<tr>
                         <th>No</th>
                         <th>Tag</th>
@@ -54,7 +54,7 @@ class Table
     }
     public static function getTagIDTable($itemList){
         $res="";
-        $res.="<table class=\"table table-dark\"  style=\"width:50%\">";
+        $res.="<table class=\"table table-dark\"  style=\"width:100%\">";
         $res.="<tr>
                         <th>No</th>
                         <th>Line No</th>   
@@ -71,17 +71,36 @@ class Table
         return $res;
     }
 
-    public static function getWordTable($wordList){
+    public static function getWordTable($tag,$wordList){
         $res="";
-        $res.="<table class=\"table table-dark\"  style=\"width:50%\">";
+        $res.="<table class=\"table table-dark\"  style=\"width:100%\">";
         $res.="<tr>
                         <th>No</th>
                         <th>Word</th>                      
                     </tr>";
 
         for ($i=0;$i<count($wordList);$i++){
+
+            $word=$wordList[$i];
+            if($word=='\'\''){
+                $word="&#39&#39";
+                $word='"'.$word.'"';
+            }
+            elseif ($word=='\''){
+                $word="&#39";
+                $word='"'.$word.'"';
+            }
+            elseif ($word=="\""){
+                $word='&quot';
+                $word='&#39'.$word.'&#39';
+            }
+            else{
+                $word='"'.$word.'"';
+            }
+
             $res.="<tr><td>".($i+1)."</td>";
-            $res.="<td>".$wordList[$i]."</td>";
+            $res.="<td><a href='#'class='text-white' onclick='loadTagIDs(".$word.",".'"'.$tag.'"'.");return false;'>".$wordList[$i]."</a></td>";
+
             $res.="</tr>";
         }
         $res.="</table>";

@@ -133,7 +133,7 @@ class HomeController extends Controller{
         if(isset($_POST["tag"])){
             $tag=new Tag();
             $res=$tag->getTagtoWordList($_POST["tag"]);
-            echo Table::getWordTable($res);
+            echo Table::getWordTable($_POST["tag"],$res);
         }
     }
 }

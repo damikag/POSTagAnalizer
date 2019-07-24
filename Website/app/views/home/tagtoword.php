@@ -24,12 +24,12 @@ $tagList=$this->tagList;
     </form>
 
     <div class="row">
-        <div class="col-sm" style="margin: 10px; padding-top: 10px;padding-bottom: 10px;">
+        <div class="col-sm" style="width: 100%; margin: 10px; padding-top: 10px;padding-bottom: 10px;">
 
             <?php if(count($tagList)):?>
                 <h4>Select a tag</h4>
                 <br>
-                <div style="height:300px; width: 30%; overflow-x:auto;" class="table-wrapper-scroll-y my-custom-scrollbar">
+                <div style="height:300px; width: 80%; overflow-x:auto;" class="table-wrapper-scroll-y my-custom-scrollbar">
 
                     <ul>
 
@@ -49,7 +49,15 @@ $tagList=$this->tagList;
 
         <div class="col-sm" >
 
-            <div id="display_tagWords" style="height:500px; width: 50%; overflow-x:auto;" class="table-wrapper-scroll-y my-custom-scrollbar">
+            <div id="display_tagWords" style="height:500px; width: 100%; overflow-x:auto;" class="table-wrapper-scroll-y my-custom-scrollbar">
+
+            </div>
+
+        </div>
+
+        <div class="col-sm" >
+
+            <div id="display_tagIDs" style="height:500px; width: 100%; overflow-x:auto;" class="table-wrapper-scroll-y my-custom-scrollbar">
 
             </div>
 

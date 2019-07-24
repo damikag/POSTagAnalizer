@@ -49,6 +49,7 @@ function loadTagIDs(word,tag)
 function loadTagWords(tag)
 {
     $( '#display_tagWords' ).empty();
+    $( '#display_tagIDs' ).empty();
     $( '#display_tagWords' ).append("<p>Processing... Wait for the Tag: "+tag+"</p>");
     if(tag)
     {
