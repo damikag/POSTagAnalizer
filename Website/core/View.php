@@ -23,6 +23,7 @@ class View {
            $currentUser,
            $total_pages,
            $msg=[],
+           $_success,
            $tagList;
     
 

@@ -24,10 +24,10 @@ $total_pages=$this->total_pages;
     <div class="row " style="padding-left: 2%;padding-right: 2%">
 
 
-
+            <div class="col">
 
             <?php if(count($results) and $total_pages>=1):?>
-                <h4>Select a page</h4><br>
+                <h4>Select a page</h4>
 
                 <div style="height:70px; overflow-x:auto;" class=" table-wrapper-scroll-y my-custom-scrollbar">
 
@@ -39,10 +39,10 @@ $total_pages=$this->total_pages;
             <?php endif; ?>
 
 
-
+            </div>
 
     </div>
-    <br>
+
     <div class="row">
 
 

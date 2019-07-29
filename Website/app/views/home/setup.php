@@ -3,6 +3,7 @@ $results = $this->searchResults ;
 // dnd($results);
 $total_pages=$this->total_pages;
 $msg=$this->msg;
+$success=$this->_success;
 ?>
 <?php $this->start('head'); ?>
 <script type="text/javascript" src="<?=PROOT?>js/loadTags.js"></script>
@@ -16,9 +17,8 @@ $msg=$this->msg;
     <br>
     <h1 class="text-center"> Setup</h1>
     <br>
-
     <div class="row">
-        <div class="col">
+        <div class="col-10" style=" background-color: #5e5e5e; padding: 10px;" >
             <h5>Select the corpus and click load</h5>
 
             <ul>
@@ -29,22 +29,37 @@ $msg=$this->msg;
     </div>
 
     <br>
-    <form action="<?=PROOT?>home/setup" id="form" method="post" enctype="multipart/form-data">
-        <input type="file" name="filePath" id="fi<p>Select the courpus</p>lePath">
-        <button type="submit" class="btn btn-primary"  name="load-submit"    id = "load-submit">Load</button>
-    </form>
+    <div class="col-10" style=" background-color: #3c4a62; padding: 10px;">
+        <form action="<?=PROOT?>home/setup" id="form" method="post" enctype="multipart/form-data">
+            <input type="file" name="filePath" id="fi<p>Select the courpus</p>lePath">
+            <button type="submit" class="btn btn-primary"  name="load-submit"    id = "load-submit">Load</button>
+        </form>
+    </div>
+
 
     <br>
 
     <div >
         <?php if($msg):?>
-            <h4>Messages:</h4>
-            <ul>
+
+<!--            <ul>-->
             <?php foreach ($msg as $message):?>
-                <li><h6><?=$message?>  </h6><br></li>
+<!--                <li><h6>--><?//=$message?><!--  </h6><br></li>-->
+                <?php if($success):?>
+                    <div class="alert alert-success alert-dismissible">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        <?=$message?>
+                    </div>
+                <?php else:?>
+                    <div class="alert alert-danger alert-dismissible">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        <?=$message?>
+                    </div>
+                <?php endif;?>
+
             <?php endforeach;?>
 
-            </ul>
+<!--            </ul>-->
         <?php else:?>
             <h6></h6>
         <?php endif;?>

@@ -137,6 +137,12 @@ class HomeController extends Controller{
     public function setupAction(){
         if(isset($_POST["load-submit"])){
             $error=false;
+            $this->view->_success=false;
+
+            if(empty($_FILES["filePath"]["name"])){
+                $error=true;
+                $this->view->msg[]="No file is selected.";
+            }
             $filePath=$_FILES["filePath"]["tmp_name"];
 
 
@@ -175,7 +181,7 @@ class HomeController extends Controller{
 
             if(!$error){
                 if(DB::reloadDB()){
-                    $this->view->msg=["Successfully Loaded"];
+                    $this->view->msg=["Successfully Loaded!"];
                 }
                 else{
                     $error=true;
@@ -185,6 +191,7 @@ class HomeController extends Controller{
             if($error){
                 $this->view->msg[]="Load Failed";
             }
+            $this->view->_success=!$error;
         }
         $this->view->render('home/setup');
     }
