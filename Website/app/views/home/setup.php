@@ -13,22 +13,40 @@ $msg=$this->msg;
 
 <div class="container bg-dark text-white" >
 
-
+    <br>
     <h1 class="text-center"> <a class="text-white" href="word">Setup</a></h1>
+    <br>
 
+    <div class="row">
+        <div class="col">
+            <h5>Select the corpus and click load</h5>
 
+            <ul>
+                <li>Each line of the corpus should be in the format [word][space][tag].<br>If not manually correct them before load </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <br>
     <form action="<?=PROOT?>home/setup" id="form" method="post" enctype="multipart/form-data">
-        <input type="file" name="filePath" id="filePath">
+        <input type="file" name="filePath" id="fi<p>Select the courpus</p>lePath">
         <button type="submit" class="btn btn-primary"  name="load-submit"    id = "load-submit">Load</button>
     </form>
 
-    <div class="row">
+    <br>
+
+    <div >
         <?php if($msg):?>
+            <h4>Messages:</h4>
+            <ul>
             <?php foreach ($msg as $message):?>
-                <h4><?=$message?>  </h4><br>
+                <li><h6><?=$message?>  </h6><br></li>
             <?php endforeach;?>
+
+            </ul>
         <?php else:?>
-            <h4>No message </h4>
+            <h6></h6>
         <?php endif;?>
 
     </div>

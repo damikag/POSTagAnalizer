@@ -21,12 +21,13 @@ $results = $this->searchResults ;
         <br>
         <a href="<?=PROOT?>home/word" class="text-center text-white"><h3>Unique Word List</h3></a>
         <br>
-        <a href="<?=PROOT?>home/allwords" class="text-center text-white"><h3>Full Corpus</h3></a>
-        <br>
+<!--        <a href="--><?//=PROOT?><!--home/allwords" class="text-center text-white"><h3>Full Corpus</h3></a>-->
+<!--        <br>-->
 <!--        <a href="--><?//=PROOT?><!--home/tag" class="text-center text-white"><h3>Unique Tag List</h3></a>-->
         
         <a href="<?=PROOT?>home/tagtoword" class="text-center text-white"><h3>Tag to Word List</h3></a>
-
+        <br>
+        <a href="<?=PROOT?>home/setup" class="text-center text-white"><h3>Setup</h3></a>
 
 
     </div>

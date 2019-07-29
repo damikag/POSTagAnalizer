@@ -12,9 +12,9 @@ $total_pages=$this->total_pages;
 
 <div class="container bg-dark text-white" >
 
-
-    <h1 class="text-center"> <a class="text-white" href="word">Unique Words in the Corpus</a></h1>
-
+    <br>
+    <h1 class="text-center"> <a class="text-white" href="word">Unique Words with more than one tag in the Corpus</a></h1>
+    <br>
 
     <form action="<?=PROOT?>home/word" id="form" method="post" enctype="multipart/form-data">
         <input type="text" name="search_key">

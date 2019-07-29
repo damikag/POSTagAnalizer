@@ -175,7 +175,7 @@ class HomeController extends Controller{
 
             if(!$error){
                 if(DB::reloadDB()){
-                    $this->view->msg[]="Successfully Reloaded";
+                    $this->view->msg=["Successfully Loaded"];
                 }
                 else{
                     $error=true;
@@ -183,7 +183,7 @@ class HomeController extends Controller{
             }
 
             if($error){
-                $this->view->msg[]="Reload Failed";
+                $this->view->msg[]="Load Failed";
             }
         }
         $this->view->render('home/setup');

@@ -20,7 +20,7 @@
   <?= $this->content('head'); ?>
 
   </head>
-  <body>
+  <body class="bg-dark">
 
     <!--- PRELOADER -->
     <div class="preeloader">
