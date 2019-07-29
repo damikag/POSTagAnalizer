@@ -117,9 +117,6 @@ class HomeController extends Controller{
                 $this->view->tagList=$tag->searchTag($_POST["search_key"]);
             }
 
-
-
-
             $this->view->render('home/tagtoword');
         }
         else{
@@ -135,6 +132,61 @@ class HomeController extends Controller{
             $res=$tag->getTagtoWordList($_POST["tag"]);
             echo Table::getWordTable($_POST["tag"],$res);
         }
+    }
+
+    public function setupAction(){
+        if(isset($_POST["load-submit"])){
+            $error=false;
+            $filePath=$_FILES["filePath"]["tmp_name"];
+
+
+            $pathCmp=explode(DS,ROOT);
+            $newPath=join(DS,array_slice($pathCmp,0,count($pathCmp)-1));
+            $newPath.="/Preprocessing/merge.py";
+
+            $command = escapeshellcmd($newPath." '".$filePath."'" );
+
+            $output = shell_exec($command);
+
+            if(trim($output)=="Done"){
+                $this->view->msg[]="";
+            }
+            else{
+                $error=true;
+            }
+
+            $newPath=join(DS,array_slice($pathCmp,0,count($pathCmp)-1));
+            $newPath.="/Preprocessing/preprocessing.py";
+
+
+            $command = escapeshellcmd($newPath." '".ROOT.DS."Corpus.txt'" );
+
+            if(!$error){
+
+                $output = shell_exec($command);
+
+                if(trim($output)=="ok"){
+                    $this->view->msg[]="";
+                }
+                else{
+                    $error=true;
+                }
+            }
+
+            if(!$error){
+                if(DB::reloadDB()){
+                    $this->view->msg[]="Successfully Reloaded";
+                }
+                else{
+                    $error=true;
+                }
+            }
+
+            if($error){
+                $this->view->msg[]="Reload Failed";
+            }
+        }
+        $this->view->render('home/setup');
     }
 }
 

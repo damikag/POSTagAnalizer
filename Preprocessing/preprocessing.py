@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import time
 import sys
 
@@ -96,7 +97,7 @@ except:
 
 Word_dictionary={}
 junk_lines=[]
-print "Reading........"
+# print "Reading........"
 
 with open(input_file) as file: 
     line_number=0 
@@ -117,23 +118,23 @@ with open(input_file) as file:
         else:
             junk_lines.append([line_number,line])
 
-print "Finished reading"
-print("--- %s seconds ---" % (time.time() - start_time))
+# print "Finished reading"
+# print("--- %s seconds ---" % (time.time() - start_time))
 
 start_time=time.time()
 
 WriteProcessedCorpus(Word_dictionary,save_to+"newCorpus.txt")
 
-print "Finished writing"
-print("--- %s seconds ---" % (time.time() - start_time))
+# print "Finished writing"
+# print("--- %s seconds ---" % (time.time() - start_time))
 
 
 start_time=time.time()
 
 WriteProcessedUniquwWords(Word_dictionary,save_to+"uniqueWords.txt")
 
-print "Finished writing"
-print("--- %s seconds ---" % (time.time() - start_time))
+# print "Finished writing"
+# print("--- %s seconds ---" % (time.time() - start_time))
 
 if len(junk_lines):
     print "Some junk lines found.\nWriting to newJunk.txt"
@@ -144,3 +145,5 @@ if len(junk_lines):
         junkFile.write(str(line[0])+line[1])
 
     print "Finished writing to newJunk.txt"
+
+print "ok"

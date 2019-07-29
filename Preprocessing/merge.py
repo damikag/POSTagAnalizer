@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import time
 import sys
 
@@ -16,8 +17,9 @@ except:
 junk_lines=[]
 formated_lines=[]
 input_file_name=input_file.strip().split('/')[-1]
+input_file_name=input_file_name.replace(' ','_')
 
-print "\nReading........"
+# print "\nReading........"
 
 with open(input_file,'r') as file: 
     line_number=0 
@@ -34,13 +36,13 @@ with open(input_file,'r') as file:
             
             junk_lines.append([line_number,line])
 
-print "Finished reading"
-print("--- %s seconds ---\n" % (time.time() - start_time))
+# print "Finished reading"
+# print("--- %s seconds ---\n" % (time.time() - start_time))
 
 if len(junk_lines):
-    print "Merging stopped."
-    print str(len(junk_lines))+" line/lines is/are out of format [word][space][tag]"
-    print "Writing to junk.txt"
+    # print "Merging stopped."
+    # print str(len(junk_lines))+" line/lines is/are out of format [word][space][tag]"
+    # print "Writing to junk.txt"
     
     junkFile=open(save_to+'junk.txt',"w")
 
@@ -51,23 +53,25 @@ if len(junk_lines):
     junkFile.close()
     
     start_time=time.time()
-    print "Finished writing"
-    print("--- %s seconds ---" % (time.time() - start_time))
+    # print "Finished writing"
+    # print("--- %s seconds ---" % (time.time() - start_time))
 
-    print "Please correct the format mismatches and re-merge"
+    # print "Please correct the format mismatches and re-merge"
 
 else:
-    print "Merging to Corpus.txt\n Please wait."
+    # print "Merging to Corpus.txt\n Please wait."
 
-    start_time=time.time()
+    # start_time=time.time()
 
-    corpusFile=open(save_to+"Corpus.txt","a")
+    corpusFile=open(save_to+"Corpus.txt","w")
     for line in formated_lines:
         corpusFile.write(line.strip()+' '+input_file_name+'\n')
     corpusFile.close()
 
     start_time=time.time()
-    print "Finished writing"
-    print("--- %s seconds ---\n" % (time.time() - start_time))
+    # print "Finished writing"
+    # print("--- %s seconds ---\n" % (time.time() - start_time))
 
-    print "Merging successfully completed."
+    # print "Merging successfully completed."
+
+    print "Done"

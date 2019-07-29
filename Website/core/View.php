@@ -22,6 +22,7 @@ class View {
            $searchResults,
            $currentUser,
            $total_pages,
+           $msg=[],
            $tagList;
     
 
