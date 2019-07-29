@@ -25,6 +25,8 @@
 
         <a href="<?=PROOT?>home/setup" class="navbar-brand text-white">Setup</a>
 
+        <a href="<?=PROOT?>home/help" class="navbar-brand text-white">Help</a>
+
       </div>
     </div>
   </nav>

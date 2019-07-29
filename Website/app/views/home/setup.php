@@ -14,7 +14,7 @@ $msg=$this->msg;
 <div class="container bg-dark text-white" >
 
     <br>
-    <h1 class="text-center"> <a class="text-white" href="word">Setup</a></h1>
+    <h1 class="text-center"> Setup</h1>
     <br>
 
     <div class="row">

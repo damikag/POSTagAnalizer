@@ -188,5 +188,10 @@ class HomeController extends Controller{
         }
         $this->view->render('home/setup');
     }
+
+    public function helpAction() {
+        $this->view->render('home/help');
+    }
+
 }
 
