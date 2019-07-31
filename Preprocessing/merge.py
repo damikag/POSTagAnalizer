@@ -7,17 +7,18 @@ start_time = time.time()
 try:
     input_file=str(sys.argv[1])
     save_to=""
+    input_file_name=str(sys.argv[2])
 
-    if len(sys.argv)>=3:
-        save_to=str(sys.argv[2])
+    if len(sys.argv)>=4:
+        save_to=str(sys.argv[3])
 except:
     print "Command line argument error"
     sys.exit()
 
 junk_lines=[]
 formated_lines=[]
-input_file_name=input_file.strip().split('/')[-1]
-input_file_name=input_file_name.replace(' ','_')
+# input_file_name=input_file.strip().split('/')[-1]
+# input_file_name=input_file_name.replace(' ','_')
 
 # print "\nReading........"
 

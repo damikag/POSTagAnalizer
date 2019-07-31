@@ -150,7 +150,7 @@ class HomeController extends Controller{
             $newPath=join(DS,array_slice($pathCmp,0,count($pathCmp)-1));
             $newPath.="/Preprocessing/merge.py";
 
-            $command = escapeshellcmd($newPath." '".$filePath."'" );
+            $command = escapeshellcmd($newPath." '".$filePath."' '".$_FILES["filePath"]["name"]."'" );
 
             $output = shell_exec($command);
 
