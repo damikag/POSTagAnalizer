@@ -139,7 +139,7 @@ class HomeController extends Controller{
             $error=false;
             $this->view->_success=false;
 
-//            if (file_exists("Corpus.txt")) unlink("Corpus.txt");
+            if (file_exists("Corpus.txt")) unlink("Corpus.txt");
 
             $pathCmp=explode(DS,ROOT);
             $newPath=join(DS,array_slice($pathCmp,0,count($pathCmp)-1));
@@ -155,7 +155,6 @@ class HomeController extends Controller{
                     $filePath=$_FILES['filePath']["tmp_name"][$i];
 
                     $command = escapeshellcmd($newPath." '".$filePath."' '".$_FILES['filePath']["name"][$i]."'" );
-//                    dnd($command);
                     $output = shell_exec($command);
 
                     if(trim($output)=="Done"){
@@ -167,14 +166,6 @@ class HomeController extends Controller{
 
                 }
             }
-
-
-
-
-
-
-
-
 
             $newPath=join(DS,array_slice($pathCmp,0,count($pathCmp)-1));
             $newPath.="/Preprocessing/preprocessing.py";
