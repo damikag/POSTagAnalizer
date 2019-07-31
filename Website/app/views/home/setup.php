@@ -22,7 +22,7 @@ $success=$this->_success;
             <h5>Select the corpus and click load</h5>
 
             <ul>
-                <li>Each line of the corpus should be in the format [word][space][tag].<br>If not manually correct them before load </li>
+                <li>Each line of the corpus should be in the format [word][space][tag].<br>If not manually correct them before load. </li>
             </ul>
         </div>
 

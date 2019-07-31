@@ -33,14 +33,14 @@ $results = $this->searchResults ;
             When you edit the corpus you can re-load as you wish.</p>
 
         <ul>
-            <li>Go to <a class="text-white" href="<?=PROOT?>home/setup">setup</a></li>
-            <li>Browse the corpus file and click Load. It will take about 30 sec - 1 min depending on
+            <li>Go to <a class="text-white" href="<?=PROOT?>home/setup">setup.</a></li>
+            <li>Browse the corpus file(s) and click Load. It will take about 30 sec - 1 min depending on
             your corpus size.
             </li>
             <li>Note: Each line of the corpus should be in the format [word][space][tag]</li>
             <li>Success or failure will be displayed. </li>
-            <li>If load failed your have to manually open the corpus and check weather format and character
-            encoding is correct.</li>
+            <li>If load failed your have to manually open the corpus and check whether format and character
+            encoding are correct.</li>
         </ul>
     </div>
     <br>
@@ -52,10 +52,10 @@ $results = $this->searchResults ;
         tags are displayed.</p>
 
         <ul>
-            <li>Go to <a class="text-white" href="<?=PROOT?>home/word">Words</a></li>
+            <li>Go to <a class="text-white" href="<?=PROOT?>home/word">Words.</a></li>
             <li>On your left there is a list of unique words. The length of the list is limited to 50 lines.
             Full list is loaded as pages. So to see other pages click the page numbers under the search bar.</li>
-            <li>Unique words are alphabetically sorted. So you can browse words page by page. Instead you can also
+            <li>Unique words are alphabetically sorted. So you can browse words, page by page. Instead you can also
             search for a word using the search bar.</li>
             <li>Click on a word to get the list of tags where the selected word is tagged. Then a list of tags will be displayed
             at the middle with count - no of time that word-tag couple appear along with percentages that a certain tag is
@@ -72,12 +72,12 @@ $results = $this->searchResults ;
         <h3>Tag to Word mapping</h3>
         <br>
         <p>To use this feature you need to have successfully loaded the corpus. Here words tagged for a certain
-        tag can be found. NOTE:ONLY tags tagged to multiple words are displayed.</p>
+        tag can be found.</p>
 
         <ul>
-            <li>Go to <a class="text-white" href="<?=PROOT?>home/tagtoword">Tags</a></li>
+            <li>Go to <a class="text-white" href="<?=PROOT?>home/tagtoword">Tags.</a></li>
             <li>On your left there is a list of tags. Tags are alphabetically sorted.</li>
-            <li>You can use the search bar to search for a tag</li>
+            <li>You can use the search bar to search for a tag.</li>
             <li>Click on a tag to get the list of words where the selected tag is used. Then a list of words will be displayed
                 at the middle.</li>
 

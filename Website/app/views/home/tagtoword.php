@@ -15,12 +15,12 @@ $tagList=$this->tagList;
 <div class="container bg-dark text-white" >
 
 
-    <h1 class="text-center"> <a class="text-white" href="tagtoword">Tag to Words in the Corpus</a></h1>
+    <h1 class="text-center"> <a class="text-white" href="tagtoword">Tag to Words mapping in the Corpus</a></h1>
 
 
     <form action="<?=PROOT?>home/tagtoword" id="form" method="post" enctype="multipart/form-data">
         <input type="text" name="search_key">
-        <button type="submit" class="btn btn-primary"  name="search-submit"    id = "search-submit">Search</button>
+        <button type="submit" class="btn btn-primary"  name="search-submit"    id = "search-submit">Search Tag</button>
     </form>
 
     <div class="row">

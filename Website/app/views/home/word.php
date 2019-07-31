@@ -18,7 +18,7 @@ $total_pages=$this->total_pages;
 
     <form action="<?=PROOT?>home/word" id="form" method="post" enctype="multipart/form-data">
         <input type="text" name="search_key">
-        <button type="submit" class="btn btn-primary"  name="search-submit"    id = "search-submit">Search</button>
+        <button type="submit" class="btn btn-primary"  name="search-submit"    id = "search-submit">Search Word</button>
     </form>
 
     <div class="row " style="padding-left: 2%;padding-right: 2%">

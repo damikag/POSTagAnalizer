@@ -15,6 +15,8 @@
       <div class="navbar-header">
         <a href="<?=PROOT?>home/index" class="navbar-brand text-white">Home</a>
 
+        <a href="<?=PROOT?>home/setup" class="navbar-brand text-white">Setup</a>
+
         <a href="<?=PROOT?>home/word" class="navbar-brand text-white">Words</a>
 
 <!--        <a href="--><?//=PROOT?><!--home/allwords" class="navbar-brand text-white">Full corpus</a>-->
@@ -22,8 +24,6 @@
 <!--        <a href="--><?//=PROOT?><!--home/tag" class="navbar-brand text-white">Tag List</a>-->
 
         <a href="<?=PROOT?>home/tagtoword" class="navbar-brand text-white">Tags</a>
-
-        <a href="<?=PROOT?>home/setup" class="navbar-brand text-white">Setup</a>
 
         <a href="<?=PROOT?>home/help" class="navbar-brand text-white">Help</a>
 

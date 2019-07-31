@@ -211,7 +211,7 @@ class HomeController extends Controller{
             }
 
             if($error){
-                $this->view->msg[]="Load Failed";
+                $this->view->msg[]="Load Failed!";
             }
             $this->view->_success=!$error;
         }
