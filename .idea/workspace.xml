@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60b78584-bdac-48ab-b46a-d2fbdc73ee04" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Preprocessing/merge.py" beforeDir="false" afterPath="$PROJECT_DIR$/Preprocessing/merge.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/Website/.htaccess" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Website/app/controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Website/app/controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/app/views/home/setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/Website/app/views/home/setup.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Website/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/Website/config/config.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Website/app/controllers/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2280">
-              <caret line="152" column="98" selection-start-line="152" selection-start-column="98" selection-end-line="152" selection-end-column="98" />
+            <state relative-caret-position="300">
+              <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -34,7 +33,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Website/.htaccess">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
@@ -76,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Website/app/views/home/setup.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="825">
-              <caret line="55" column="24" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
+            <state relative-caret-position="202">
+              <caret line="33" column="75" selection-start-line="33" selection-start-column="75" selection-end-line="33" selection-end-column="75" />
             </state>
           </provider>
         </entry>
@@ -150,11 +149,11 @@
         <option value="$PROJECT_DIR$/Website/app/views/home/help.php" />
         <option value="$PROJECT_DIR$/Website/app/views/home/index.php" />
         <option value="$PROJECT_DIR$/Website/core/View.php" />
-        <option value="$PROJECT_DIR$/Website/app/views/home/setup.php" />
         <option value="$PROJECT_DIR$/Website/app/views/home/word.php" />
-        <option value="$PROJECT_DIR$/Website/config/config.php" />
-        <option value="$PROJECT_DIR$/Website/app/controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/Website/.htaccess" />
+        <option value="$PROJECT_DIR$/Website/config/config.php" />
+        <option value="$PROJECT_DIR$/Website/app/views/home/setup.php" />
+        <option value="$PROJECT_DIR$/Website/app/controllers/HomeController.php" />
       </list>
     </option>
   </component>
@@ -169,7 +168,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -270,6 +268,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -322,15 +321,15 @@
       <workItem from="1564319167077" duration="3110000" />
       <workItem from="1564370754435" duration="14912000" />
       <workItem from="1564544797014" duration="1183000" />
-      <workItem from="1564547018005" duration="308000" />
+      <workItem from="1564547018005" duration="5189000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141033000" />
+    <option name="totallyTimeSpent" value="145914000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1299" height="743" extended-state="6" />
+    <frame x="67" y="25" width="1299" height="743" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.33838788" />
@@ -537,13 +536,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Website/app/controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2280">
-          <caret line="152" column="98" selection-start-line="152" selection-start-column="98" selection-end-line="152" selection-end-column="98" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Website/app/views/home/word.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -575,20 +567,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Website/app/views/home/setup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="55" column="24" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Website/config/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Website/app/views/home/tag.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -603,6 +581,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" selection-start-line="8" selection-end-line="9" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/app/views/home/setup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="33" column="75" selection-start-line="33" selection-start-column="75" selection-end-line="33" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/app/controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
         </state>
       </provider>
     </entry>

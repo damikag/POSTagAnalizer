@@ -31,7 +31,7 @@ $success=$this->_success;
     <br>
     <div class="col-10" style=" background-color: #3c4a62; padding: 10px;">
         <form action="<?=PROOT?>home/setup" id="form" method="post" enctype="multipart/form-data">
-            <input type="file" name="filePath" id="fi<p>Select the courpus</p>lePath">
+            <input type="file" name="filePath[]" id="filePath" multiple=""/>
             <button type="submit" class="btn btn-primary"  name="load-submit"    id = "load-submit">Load</button>
         </form>
     </div>

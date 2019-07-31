@@ -139,27 +139,42 @@ class HomeController extends Controller{
             $error=false;
             $this->view->_success=false;
 
-            if(empty($_FILES["filePath"]["name"])){
-                $error=true;
-                $this->view->msg[]="No file is selected.";
-            }
-            $filePath=$_FILES["filePath"]["tmp_name"];
-
+//            if (file_exists("Corpus.txt")) unlink("Corpus.txt");
 
             $pathCmp=explode(DS,ROOT);
             $newPath=join(DS,array_slice($pathCmp,0,count($pathCmp)-1));
             $newPath.="/Preprocessing/merge.py";
 
-            $command = escapeshellcmd($newPath." '".$filePath."' '".$_FILES["filePath"]["name"]."'" );
-
-            $output = shell_exec($command);
-
-            if(trim($output)=="Done"){
-                $this->view->msg[]="";
+            if(empty($_FILES["filePath"]["name"][0])){
+                $error=true;
+                $this->view->msg[]="No file is selected.";
             }
             else{
-                $error=true;
+                for($i=0;$i<count($_FILES["filePath"]["name"]);$i++) {
+
+                    $filePath=$_FILES['filePath']["tmp_name"][$i];
+
+                    $command = escapeshellcmd($newPath." '".$filePath."' '".$_FILES['filePath']["name"][$i]."'" );
+//                    dnd($command);
+                    $output = shell_exec($command);
+
+                    if(trim($output)=="Done"){
+                        $this->view->msg[]="";
+                    }
+                    else{
+                        $error=true;
+                    }
+
+                }
             }
+
+
+
+
+
+
+
+
 
             $newPath=join(DS,array_slice($pathCmp,0,count($pathCmp)-1));
             $newPath.="/Preprocessing/preprocessing.py";

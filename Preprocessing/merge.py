@@ -64,7 +64,7 @@ else:
 
     # start_time=time.time()
 
-    corpusFile=open(save_to+"Corpus.txt","w")
+    corpusFile=open(save_to+"Corpus.txt","a")
     for line in formated_lines:
         corpusFile.write(line.strip()+' '+input_file_name+'\n')
     corpusFile.close()
