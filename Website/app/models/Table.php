@@ -110,4 +110,42 @@ class Table
         $res.="</div>";
         return $res;
     }
+
+    public static function getWordTableFull($tag,$wordList){
+        $res="";
+        $res.="<div style=\"height:400px; overflow-x:auto;\" class=\"table-wrapper-scroll-y my-custom-scrollbar\">";
+        $res.="<table class=\"table table-dark\"  style=\"width:100%\">";
+        $res.="<tr>
+                        <th>No</th>
+                        <th>Word</th>                      
+                    </tr>";
+
+        for ($i=0;$i<count($wordList);$i++){
+
+            $word=$wordList[$i];
+            if($word=='\'\''){
+                $word="&#39&#39";
+                $word='"'.$word.'"';
+            }
+            elseif ($word=='\''){
+                $word="&#39";
+                $word='"'.$word.'"';
+            }
+            elseif ($word=="\""){
+                $word='&quot';
+                $word='&#39'.$word.'&#39';
+            }
+            else{
+                $word='"'.$word.'"';
+            }
+
+            $res.="<tr><td>".($i+1)."</td>";
+            $res.="<td><a href='#'class='text-white' onclick='loadTagIDsFull(".$word.",".'"'.$tag.'"'.");return false;'>".$wordList[$i]."</a></td>";
+
+            $res.="</tr>";
+        }
+        $res.="</table>";
+        $res.="</div>";
+        return $res;
+    }
 }

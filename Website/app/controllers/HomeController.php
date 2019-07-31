@@ -107,6 +107,14 @@ class HomeController extends Controller{
         }
     }
 
+    public function loadtagIDsFullAction(){
+        if(isset($_POST["word"])and isset($_POST["tag"])){
+            $tag=new Tag();
+            $res=$tag->getTagIDsFull($_POST["word"],$_POST["tag"]);
+            echo Table::getTagIDTable($res);
+        }
+    }
+
     public function  tagtowordAction(){
         $tag=new Tag();
         if(isset($_POST["search-submit"])){
@@ -131,6 +139,14 @@ class HomeController extends Controller{
             $tag=new Tag();
             $res=$tag->getTagtoWordList($_POST["tag"]);
             echo Table::getWordTable($_POST["tag"],$res);
+        }
+    }
+
+    public function  loadtagWordsFullAction(){
+        if(isset($_POST["tag"])){
+            $tag=new Tag();
+            $res=$tag->getTagtoWordListFull($_POST["tag"]);
+            echo Table::getWordTableFull($_POST["tag"],$res);
         }
     }
 

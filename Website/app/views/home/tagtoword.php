@@ -34,7 +34,7 @@ $tagList=$this->tagList;
                     <ul>
 
                     <?php for ($i=0; $i<count($tagList); $i++) {?>
-                        <li><a href='#' class="text-white" onclick="loadTagWords(<?="'".$tagList[$i]."'"?>);return false;"><?=$tagList[$i]?>  </a></li>
+                        <li><a href='#' class="text-white" onclick="loadTagWordsFull(<?="'".$tagList[$i]."'"?>);return false;"><?=$tagList[$i]?>  </a></li>
                     <?php };?>
 
                     </ul>

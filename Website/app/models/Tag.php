@@ -90,12 +90,58 @@ class Tag extends Model {
         return $res;
     }
 
+    public function getTagIDsFull($word,$tag){
+
+        $sql = "SELECT * FROM Full WHERE Word=? AND Tag=?";
+        $results=[];
+        $this->query($sql,[$word,$tag]);
+        $resultsQuery = $this->_db->results();
+
+        if($resultsQuery){
+            foreach($resultsQuery as $result) {
+
+                $obj = new Word();
+                $obj->populateObjData($result);
+                $results[] =$obj;
+            }
+        }
+        $res=[];
+        foreach ($results as $result){
+            $res[]=[$result->Line_number,$result->Filename];
+//            $res[]=[$result->Line_number];
+        }
+
+        return $res;
+    }
+
     public function getTagList(){
         return $this->_tagList;
     }
 
     public function  getTagtoWordList($tag){
         $sql = "SELECT DISTINCT Word FROM AllWords WHERE Tag=?";
+        $results=[];
+        $this->query($sql,[$tag]);
+        $resultsQuery = $this->_db->results();
+
+        if($resultsQuery){
+            foreach($resultsQuery as $result) {
+
+                $obj = new Tag();
+                $obj->populateObjData($result);
+                $results[] =$obj;
+            }
+        }
+        $res=[];
+        foreach ($results as $result){
+            $res[]=$result->Word;
+        }
+
+        return $res;
+    }
+
+    public function  getTagtoWordListFull($tag){
+        $sql = "SELECT DISTINCT Word FROM Full WHERE Tag=?";
         $results=[];
         $this->query($sql,[$tag]);
         $resultsQuery = $this->_db->results();

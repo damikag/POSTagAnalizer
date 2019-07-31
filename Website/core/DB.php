@@ -32,6 +32,9 @@ class DB {
             $sql="CREATE TABLE IF NOT EXISTS `".DB_NAME."`.`WordList` ( `ID` INT(255) NOT NULL AUTO_INCREMENT ,  `Word` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL ,  `Tags` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL ,  `Counts` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL ,    PRIMARY KEY  (`ID`)) ENGINE = InnoDB;";
             $result=$conn->exec($sql);
 
+            $sql="CREATE TABLE IF NOT EXISTS `".DB_NAME."`.`Full` ( `ID` INT(255) NOT NULL AUTO_INCREMENT ,  `Word` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL ,  `Tag` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL ,  `Line_number` INT(255) NOT NULL ,  `Filename` VARCHAR(500) NOT NULL ,    PRIMARY KEY  (`ID`)) ENGINE = InnoDB;";
+            $result=$conn->exec($sql);
+
         }catch (PDOException $e){
             die($e->getMessage());
         }
@@ -232,6 +235,9 @@ class DB {
             $sql="TRUNCATE TABLE `WordList`";
             $result = $conn->exec($sql);
 
+            $sql="TRUNCATE TABLE `Full`";
+            $result = $conn->exec($sql);
+
             $sql="LOAD DATA INFILE '".ROOT."/newCorpus.txt' INTO TABLE AllWords FIELDS TERMINATED BY ' ' LINES TERMINATED BY '\n' (Word,Tag,Line_number,Filename);";
             $result = $conn->exec($sql);
 
@@ -240,6 +246,10 @@ class DB {
 
             $sql="LOAD DATA INFILE '".ROOT."/uniqueWords.txt' INTO TABLE WordList FIELDS TERMINATED BY ' ' LINES TERMINATED BY '\n' (Word,Tags,Counts);
 ";
+            $result = $conn->exec($sql);
+
+            $sql="LOAD DATA INFILE '".ROOT."/Corpus.txt' INTO TABLE Full FIELDS TERMINATED BY ' ' LINES TERMINATED BY '\n' (Word,Tag,Line_number,Filename);";
+//            dnd($sql);
             $result = $conn->exec($sql);
 
 
