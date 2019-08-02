@@ -1,7 +1,7 @@
 {
     "Guest" : {
         "denied": [],
-        "Home" : ["index","allwords","tag","word","loadtags","loadtagIDs","tagtoword","loadtagWords","setup","help","loadtagWordsFull","loadtagIDsFull"]
+        "Home" : ["index","allwords","tag","word","loadtags","loadtagIDs","tagtoword","setup","help","loadtagWordsFull"]
 
         
     }

@@ -29,7 +29,7 @@ $tagList=$this->tagList;
             <?php if(count($tagList)):?>
                 <h4>Select a tag</h4>
                 <br>
-                <div style="height:300px; width: 80%; overflow-x:auto;" class="table-wrapper-scroll-y my-custom-scrollbar">
+                <div style="height:400px; width: 80%; overflow-x:auto;" class="table-wrapper-scroll-y my-custom-scrollbar">
 
                     <ul>
 

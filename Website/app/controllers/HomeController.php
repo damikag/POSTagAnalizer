@@ -103,10 +103,8 @@ class HomeController extends Controller{
         if(isset($_POST["word"])and isset($_POST["tag"])){
 
             $results_per_page = 50;
-            dnd($_POST);
             if(isset($_POST["pgNumber"])){
                 $page=(int)$_POST["pgNumber"];
-                dnd($page);
             }
             else{
                 $page=1;
@@ -125,13 +123,7 @@ class HomeController extends Controller{
         }
     }
 
-    public function loadtagIDsFullAction(){
-        if(isset($_POST["word"])and isset($_POST["tag"])){
-            $tag=new Tag();
-            $res=$tag->getTagIDsFull($_POST["word"],$_POST["tag"]);
-            echo Table::getTagIDTable($res);
-        }
-    }
+
 
     public function  tagtowordAction(){
         $tag=new Tag();
@@ -152,19 +144,25 @@ class HomeController extends Controller{
         }
     }
 
-    public function  loadtagWordsAction(){
-        if(isset($_POST["tag"])){
-            $tag=new Tag();
-            $res=$tag->getTagtoWordList($_POST["tag"]);
-            echo Table::getWordTable($_POST["tag"],$res);
-        }
-    }
-
     public function  loadtagWordsFullAction(){
         if(isset($_POST["tag"])){
+
+            $results_per_page = 50;
+            if(isset($_POST["pgNumber"])){
+                $page=(int)$_POST["pgNumber"];
+            }
+            else{
+                $page=1;
+            }
+
+            $start_from = ($page-1) * $results_per_page;
+
+            $startWord=($page-1)*$results_per_page;
+
             $tag=new Tag();
-            $res=$tag->getTagtoWordListFull($_POST["tag"]);
-            echo Table::getWordTableFull($_POST["tag"],$res);
+            $res=$tag->getTagtoWordListFull($_POST["tag"],$start_from,$results_per_page);
+            $wordCount=$tag->getTagtoWordCount($_POST["tag"]);
+            echo Table::getWordTableFull($_POST["tag"],$res,$startWord).Helper::getWordPageList($_POST["tag"],$wordCount,$results_per_page);
         }
     }
 
