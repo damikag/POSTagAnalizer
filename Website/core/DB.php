@@ -248,7 +248,7 @@ class DB {
 ";
             $result = $conn->exec($sql);
 
-            $sql="LOAD DATA INFILE '".ROOT."/Corpus.txt' INTO TABLE Full FIELDS TERMINATED BY ' ' LINES TERMINATED BY '\n' (Word,Tag,Line_number,Filename);";
+            $sql="LOAD DATA INFILE '".ROOT."/SortedCorpus.txt' INTO TABLE Full FIELDS TERMINATED BY ' ' LINES TERMINATED BY '\n' (Word,Tag,Line_number,Filename);";
 //            dnd($sql);
             $result = $conn->exec($sql);
 

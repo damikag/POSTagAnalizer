@@ -217,6 +217,23 @@ class HomeController extends Controller{
                 }
             }
 
+            $newPath=join(DS,array_slice($pathCmp,0,count($pathCmp)-1));
+            $newPath.="/Preprocessing/sorter.py";
+
+            $command = escapeshellcmd($newPath." '".ROOT.DS."Corpus.txt'" );
+
+            if(!$error){
+
+                $output = shell_exec($command);
+
+                if(trim($output)=="ok"){
+                    $this->view->msg[]="";
+                }
+                else{
+                    $error=true;
+                }
+            }
+
             if(!$error){
                 if(DB::reloadDB()){
                     $this->view->msg=["Successfully Loaded!"];

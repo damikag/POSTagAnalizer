@@ -72,7 +72,7 @@ class Table
         $res.="</div>";
         return $res;
     }
-    
+
     public static function getWordTableFull($tag,$wordList,$startWord){
         $res="";
         $res.="<div style=\"height:350px; overflow-x:auto; padding: 10px; margin: 10px;\" class=\"table-wrapper-scroll-y my-custom-scrollbar\">";
