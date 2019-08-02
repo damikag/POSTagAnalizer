@@ -52,7 +52,7 @@ class Table
         $res.="</table>";
         return $res;
     }
-    public static function getTagIDTable($itemList){
+    public static function getTagIDTable($itemList,$IDstart){
         $res="";
         $res.="<div style=\"height:400px; overflow-x:auto;\" class=\"table-wrapper-scroll-y my-custom-scrollbar\">";
         $res.="<table class=\"table table-dark\"  style=\"width:100%\">";
@@ -63,7 +63,7 @@ class Table
                     </tr>";
 
         for ($i=0;$i<count($itemList);$i++){
-            $res.="<tr><td>".($i+1)."</td>";
+            $res.="<tr><td>".($IDstart+$i+1)."</td>";
             $res.="<td>".number_format($itemList[$i][0])."</td>";
             $res.="<td>".$itemList[$i][1]."</td>";
             $res.="</tr>";

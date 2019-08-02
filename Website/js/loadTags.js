@@ -22,7 +22,7 @@ function loadTags(word)
 
 }
 
-function loadTagIDs(word,tag)
+function loadTagIDs(word,tag,pgNum)
 {
     $( '#display_tagIDs' ).empty();
     $( '#display_tagIDs' ).append("<h6>Locations for Word: "+word+" and Tag: "+tag+"</h6>");
@@ -34,6 +34,7 @@ function loadTagIDs(word,tag)
             data: {
                 word:word,
                 tag:tag,
+                pgNumber:pgNum,
             },
             success: function (response) {
                 $( '#display_tagIDs' ).empty();

@@ -66,9 +66,9 @@ class Tag extends Model {
         return $resultsQuery[0]->total;
     }
 
-    public function getTagIDs($word,$tag){
+    public function getTagIDs($word,$tag,$start_from,$results_per_page){
 
-        $sql = "SELECT * FROM AllWords WHERE Word=? AND Tag=?";
+        $sql = "SELECT * FROM AllWords WHERE Word=? AND Tag=? ORDER BY ID ASC LIMIT $start_from, ".$results_per_page;
         $results=[];
         $this->query($sql,[$word,$tag]);
         $resultsQuery = $this->_db->results();
@@ -179,6 +179,14 @@ class Tag extends Model {
         }
 //        dnd($results);
         return $results;
+    }
+
+    public function getTagIDsCount($word,$tag){
+        $sql = "SELECT COUNT(ID) AS total FROM AllWords WHERE Word=? AND Tag=?";
+//        dnd($sql);
+        $this->query($sql,[$word,$tag]);
+        $resultsQuery = $this->_db->results();
+        return $resultsQuery[0]->total;
     }
 
 }

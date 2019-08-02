@@ -101,9 +101,27 @@ class HomeController extends Controller{
 
     public function loadtagIDsAction(){
         if(isset($_POST["word"])and isset($_POST["tag"])){
+
+            $results_per_page = 50;
+            dnd($_POST);
+            if(isset($_POST["pgNumber"])){
+                $page=(int)$_POST["pgNumber"];
+                dnd($page);
+            }
+            else{
+                $page=1;
+            }
+
+            $start_from = ($page-1) * $results_per_page;
+
             $tag=new Tag();
-            $res=$tag->getTagIDs($_POST["word"],$_POST["tag"]);
-            echo Table::getTagIDTable($res);
+            $res=$tag->getTagIDs($_POST["word"],$_POST["tag"],$start_from,$results_per_page);
+            $tagIDCount=$tag->getTagIDsCount($_POST["word"],$_POST["tag"]);
+
+            $IDstart=($page-1)*$results_per_page;
+
+
+            echo Table::getTagIDTable($res,$IDstart).Helper::getPageList($_POST["word"],$_POST["tag"],$tagIDCount,$results_per_page);
         }
     }
 
