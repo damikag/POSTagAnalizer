@@ -221,11 +221,11 @@ class DB {
     {
         try {
             $conn = new PDO('mysql:host=' .DB_HOST . ';dbname=' . DB_NAME, DB_USER, DB_PASSWORD);
-
+            
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $conn->setAttribute(PDO::MYSQL_ATTR_LOCAL_INFILE,true);
             $conn->exec("set names utf8");
-
+            
             $sql="TRUNCATE TABLE `AllWords`";
             $result = $conn->exec($sql);
 
@@ -237,19 +237,21 @@ class DB {
 
             $sql="TRUNCATE TABLE `Full`";
             $result = $conn->exec($sql);
-
-            $sql="LOAD DATA INFILE '".ROOT."/newCorpus.txt' INTO TABLE AllWords FIELDS TERMINATED BY ' ' LINES TERMINATED BY '\n' (Word,Tag,Line_number,Filename);";
+            
+            $sql="LOAD DATA INFILE '".ROOT.DS."newCorpus.txt' INTO TABLE AllWords FIELDS TERMINATED BY ' ' LINES TERMINATED BY '\n' (Word,Tag,Line_number,Filename);";
+            $sql=str_replace("\\","\\\\",$sql);
             $result = $conn->exec($sql);
-
+            
             $sql="INSERT INTO Tags SELECT DISTINCT Tag FROM AllWords;";
             $result = $conn->exec($sql);
 
-            $sql="LOAD DATA INFILE '".ROOT."/uniqueWords.txt' INTO TABLE WordList FIELDS TERMINATED BY ' ' LINES TERMINATED BY '\n' (Word,Tags,Counts);
+            $sql="LOAD DATA INFILE '".ROOT.DS."uniqueWords.txt' INTO TABLE WordList FIELDS TERMINATED BY ' ' LINES TERMINATED BY '\n' (Word,Tags,Counts);
 ";
+            $sql=str_replace("\\","\\\\",$sql);
             $result = $conn->exec($sql);
 
-            $sql="LOAD DATA INFILE '".ROOT."/SortedCorpus.txt' INTO TABLE Full FIELDS TERMINATED BY ' ' LINES TERMINATED BY '\n' (Word,Tag,Line_number,Filename);";
-//            dnd($sql);
+            $sql="LOAD DATA INFILE '".ROOT.DS."SortedCorpus.txt' INTO TABLE Full FIELDS TERMINATED BY ' ' LINES TERMINATED BY '\n' (Word,Tag,Line_number,Filename);";
+            $sql=str_replace("\\","\\\\",$sql);
             $result = $conn->exec($sql);
 
 

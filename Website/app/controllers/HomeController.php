@@ -175,7 +175,7 @@ class HomeController extends Controller{
 
             $pathCmp=explode(DS,ROOT);
             $newPath=join(DS,array_slice($pathCmp,0,count($pathCmp)-1));
-            $newPath.="/Preprocessing/merge.py";
+            $newPath.=DS."Preprocessing".DS."merge.py";
 
             if(empty($_FILES["filePath"]["name"][0])){
                 $error=true;
@@ -186,9 +186,9 @@ class HomeController extends Controller{
 
                     $filePath=$_FILES['filePath']["tmp_name"][$i];
 
-                    $command = escapeshellcmd($newPath." '".$filePath."' '".$_FILES['filePath']["name"][$i]."'" );
+                    $command = escapeshellcmd($newPath." ".$filePath." \"".$_FILES['filePath']["name"][$i]."\"" );
                     $output = shell_exec($command);
-
+                    
                     if(trim($output)=="Done"){
                         $this->view->msg[]="";
                     }
@@ -200,15 +200,15 @@ class HomeController extends Controller{
             }
 
             $newPath=join(DS,array_slice($pathCmp,0,count($pathCmp)-1));
-            $newPath.="/Preprocessing/preprocessing.py";
+            $newPath.=DS."Preprocessing".DS."preprocessing.py";
 
 
-            $command = escapeshellcmd($newPath." '".ROOT.DS."Corpus.txt'" );
+            $command = escapeshellcmd($newPath." ".ROOT.DS."Corpus.txt" );
 
             if(!$error){
 
                 $output = shell_exec($command);
-
+                
                 if(trim($output)=="ok"){
                     $this->view->msg[]="";
                 }
@@ -218,14 +218,14 @@ class HomeController extends Controller{
             }
 
             $newPath=join(DS,array_slice($pathCmp,0,count($pathCmp)-1));
-            $newPath.="/Preprocessing/sorter.py";
+            $newPath.=DS."Preprocessing".DS."sorter.py";
 
-            $command = escapeshellcmd($newPath." '".ROOT.DS."Corpus.txt'" );
+            $command = escapeshellcmd($newPath." ".ROOT.DS."Corpus.txt" );
 
             if(!$error){
 
                 $output = shell_exec($command);
-
+          
                 if(trim($output)=="ok"){
                     $this->view->msg[]="";
                 }
@@ -233,7 +233,7 @@ class HomeController extends Controller{
                     $error=true;
                 }
             }
-
+         
             if(!$error){
                 if(DB::reloadDB()){
                     $this->view->msg=["Successfully Loaded!"];

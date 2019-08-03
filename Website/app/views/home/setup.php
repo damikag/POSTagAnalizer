@@ -43,7 +43,8 @@ $success=$this->_success;
         <?php if($msg):?>
 
 <!--            <ul>-->
-            <?php foreach ($msg as $message):?>
+            <?php foreach ($msg as $message):
+                if($message=="")continue;?>
 <!--                <li><h6>--><?//=$message?><!--  </h6><br></li>-->
                 <?php if($success):?>
                     <div class="alert alert-success alert-dismissible">

@@ -65,9 +65,10 @@ with open(input_file) as file:
 
         line_number+=1
         
-        if len(line.strip().split())==4:
+        if len(line.strip().split())>=4:
              
-            word,tag,ln,file_name=line.strip().split()
+            word,tag,ln=line.strip().split()[:3]
+            file_name=''.join(line.strip().split()[3:])
            
             if word in Word_dictionary:
                 Word_dictionary[word].addPair(tag,ln,file_name)
