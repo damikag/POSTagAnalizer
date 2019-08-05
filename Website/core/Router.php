@@ -71,13 +71,7 @@ class Router {
         $current_user_acls = ["Guest"];
         $grantAccess = false;
 
-        if(Session::exists(CURRENT_USER_SESSION_NAME)) {
-            $current_user_acls[] = "loggedIn";
-            foreach(currentUser()->acls() as $a) {
-                $current_user_acls[] = $a;
-            }
-        }
-        
+
         foreach($current_user_acls as $level) {
             if(array_key_exists($level,$acl) && array_key_exists($controller_name,$acl[$level])) {
                 if(in_array($action_name, $acl[$level][$controller_name]) || in_array("*", $acl[$level][$controller_name])) {

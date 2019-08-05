@@ -35,8 +35,8 @@ class Tag extends Model {
 
     public function getUniqueTags($word){
 
-        $sql = "SELECT DISTINCT Tag FROM AllWords WHERE Word=?";
-
+//        $sql = "SELECT DISTINCT Tag FROM AllWords WHERE Word=?";
+        $sql = "SELECT * FROM WordList WHERE Word=?";
         $results=[];
         $this->query($sql,[$word]);
         $resultsQuery = $this->_db->results();
@@ -49,11 +49,13 @@ class Tag extends Model {
                 $results[] =$obj;
             }
         }
+//        dnd($results);
         $res=[];
         foreach ($results as $result){
-            $res[]=$result->Tag;
+            $res[]=$result->Tags;
+            $res[]=$result->Counts;
         }
-
+//        dnd($res);
         return $res;
     }
 
@@ -64,9 +66,9 @@ class Tag extends Model {
         return $resultsQuery[0]->total;
     }
 
-    public function getTagIDs($word,$tag){
+    public function getTagIDs($word,$tag,$start_from,$results_per_page){
 
-        $sql = "SELECT * FROM AllWords WHERE Word=? AND Tag=?";
+        $sql = "SELECT * FROM Full WHERE Word=? AND Tag=? ORDER BY ID ASC LIMIT $start_from, ".$results_per_page;
         $results=[];
         $this->query($sql,[$word,$tag]);
         $resultsQuery = $this->_db->results();
@@ -81,9 +83,118 @@ class Tag extends Model {
         }
         $res=[];
         foreach ($results as $result){
-            $res[]=$result->ID;
+            $res[]=[$result->Line_number,$result->Filename];
+//            $res[]=[$result->Line_number];
         }
 
         return $res;
     }
+
+//    public function getTagIDsFull($word,$tag){
+//
+//        $sql = "SELECT * FROM Full WHERE Word=? AND Tag=?";
+//        $results=[];
+//        $this->query($sql,[$word,$tag]);
+//        $resultsQuery = $this->_db->results();
+//
+//        if($resultsQuery){
+//            foreach($resultsQuery as $result) {
+//
+//                $obj = new Word();
+//                $obj->populateObjData($result);
+//                $results[] =$obj;
+//            }
+//        }
+//        $res=[];
+//        foreach ($results as $result){
+//            $res[]=[$result->Line_number,$result->Filename];
+////            $res[]=[$result->Line_number];
+//        }
+//
+//        return $res;
+//    }
+
+    public function getTagList(){
+        return $this->_tagList;
+    }
+
+    public function  getTagtoWordList($tag){
+        $sql = "SELECT DISTINCT Word FROM AllWords WHERE Tag=?";
+        $results=[];
+        $this->query($sql,[$tag]);
+        $resultsQuery = $this->_db->results();
+
+        if($resultsQuery){
+            foreach($resultsQuery as $result) {
+
+                $obj = new Tag();
+                $obj->populateObjData($result);
+                $results[] =$obj;
+            }
+        }
+        $res=[];
+        foreach ($results as $result){
+            $res[]=$result->Word;
+        }
+
+        return $res;
+    }
+
+    public function  getTagtoWordListFull($tag,$start_from,$results_per_page){
+        $sql = "SELECT DISTINCT Word FROM Full WHERE Tag=? ORDER BY ID ASC LIMIT $start_from, ".$results_per_page;
+        $results=[];
+        $this->query($sql,[$tag]);
+        $resultsQuery = $this->_db->results();
+
+        if($resultsQuery){
+            foreach($resultsQuery as $result) {
+
+                $obj = new Tag();
+                $obj->populateObjData($result);
+                $results[] =$obj;
+            }
+        }
+        $res=[];
+        foreach ($results as $result){
+            $res[]=$result->Word;
+        }
+
+        return $res;
+    }
+
+    public function searchTag($tag){
+        $sql = "SELECT DISTINCT Tag FROM AllWords WHERE Tag=? ORDER BY ID ";
+
+        $results=[];
+        $this->query($sql,[$tag]);
+        $resultsQuery = $this->_db->results();
+
+        if($resultsQuery){
+            foreach($resultsQuery as $result) {
+
+//                $obj = new Tag();
+//                $obj->populateObjData($result);
+                $results[] =$result->Tag;
+            }
+        }
+//        dnd($results);
+        return $results;
+    }
+
+    public function getTagIDsCount($word,$tag){
+        $sql = "SELECT COUNT(ID) AS total FROM Full WHERE Word=? AND Tag=?";
+//        dnd($sql);
+        $this->query($sql,[$word,$tag]);
+        $resultsQuery = $this->_db->results();
+        return $resultsQuery[0]->total;
+    }
+
+    public function getTagtoWordCount($tag){
+        $sql = "SELECT COUNT(DISTINCT Word) AS total FROM Full WHERE Tag=?";
+//        dnd($sql);
+        $this->query($sql,[$tag]);
+        $resultsQuery = $this->_db->results();
+        return $resultsQuery[0]->total;
+    }
+
 }

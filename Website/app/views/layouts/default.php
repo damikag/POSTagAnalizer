@@ -20,7 +20,7 @@
   <?= $this->content('head'); ?>
 
   </head>
-  <body>
+  <body class="bg-dark">
 
     <!--- PRELOADER -->
     <div class="preeloader">
@@ -32,8 +32,10 @@
   
     <div class="top-area-bg" data-stellar-background-ratio="0.6"></div>
     <div class="header-top-area">
+
         <?php include 'main_menu.php'  ?>
     </div>
+
     <?= $this->content('body'); ?>  
     <div >
       <?php include 'footer.php' ?>

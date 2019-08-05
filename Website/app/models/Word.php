@@ -33,7 +33,6 @@ class Word extends Model {
                 $results[] =$obj;
             }
         }
-//        dnd($results);
         return $results;
     }
 
@@ -59,7 +58,6 @@ class Word extends Model {
                 $results[] =$obj;
             }
         }
-//        dnd($results);
         return $results;
     }
 
